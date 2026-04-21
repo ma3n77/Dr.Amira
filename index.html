@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Amira Badawy | Specialized Women's Healthcare</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Tajawal:wght@300;400;500;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/jpeg" href="images/logo.jpg">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header class="site-header" id="siteHeader">
+        <div class="container">
+            <div class="nav-inner">
+                <div class="nav-logo">
+                    <img src="images/logo.jpg" alt="Amira Clinic Logo">
+                </div>
+
+                <nav class="nav-menu" id="navMenu">
+                    <a href="#hero" data-en="Home" data-ar="الرئيسية">Home</a>
+                    <a href="#about" data-en="About" data-ar="عن الدكتورة">About</a>
+                    <a href="#services" data-en="Services" data-ar="خدماتنا">Services</a>
+                    <a href="#why-us" data-en="Why Us" data-ar="لماذا نحن">Why Us</a>
+                    <a href="#contact" data-en="Contact" data-ar="تواصل معنا">Contact</a>
+                </nav>
+
+                <div class="nav-actions">
+                    <button class="lang-toggle" id="langToggle" onclick="toggleLang()">عربي</button>
+                    <a href="#book" class="btn btn-plum" data-en="Book Appointment" data-ar="احجز موعد">Book
+                        Appointment</a>
+                </div>
+
+                <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- ====== HERO ====== -->
+    <section class="hero" id="hero">
+        <div class="hero-deco hero-deco-1"></div>
+        <div class="hero-deco hero-deco-2"></div>
+        <div class="container">
+            <div class="hero-grid">
+                <div class="hero-content reveal">
+                    <div class="hero-tagline">
+                        <span class="material-symbols-outlined" style="font-size:16px">auto_awesome</span>
+                        <span data-en="Your Awareness, Your Safety" data-ar="وعيك.. أمانك">Your Awareness, Your
+                            Safety</span>
+                    </div>
+                    <h1 class="hero-title" data-en="Specialized Women's<br>Healthcare"
+                        data-ar="رعاية صحية<br>متخصصة للمرأة">Specialized Women's<br>Healthcare</h1>
+                    <p class="hero-subtitle"
+                        data-en="Prof. Dr. Amira Badawy — Professor of Obstetrics & Gynecology at Alexandria University. Over 20 years of excellence in comprehensive women's healthcare, gynecological oncology, and advanced laparoscopy."
+                        data-ar="أ.د. أميرة بدوى — أستاذ أمراض النساء والتوليد بجامعة الإسكندرية، خبرة تزيد عن 20 عاماً في الرعاية الصحية المتكاملة والأورام النسائية والمناظير المتقدمة.">
+                        Prof. Dr. Amira Badawy — Professor of Obstetrics & Gynecology at Alexandria University. Over 20
+                        years of excellence in comprehensive women's healthcare, gynecological oncology, and advanced
+                        laparoscopy.
+                    </p>
+
+                    <div class="hero-stats">
+                        <div class="hero-stat">
+                            <div class="hero-stat-num large">20+</div>
+                            <div class="hero-stat-txt" data-en="Years Experience" data-ar="سنة خبرة">Years Experience
+                            </div>
+                        </div>
+                        <div class="hero-stat">
+                            <div class="hero-stat-num">100%</div>
+                            <div class="hero-stat-txt" data-en="Female Team" data-ar="فريق نسائي">Female Team</div>
+                        </div>
+                        <div class="hero-stat">
+                            <div class="hero-stat-num">3</div>
+                            <div class="hero-stat-txt" data-en="Branches" data-ar="فروع">Branches</div>
+                        </div>
+                    </div>
+
+                    <div class="hero-buttons">
+                        <a href="#book" class="btn btn-plum"><span
+                                class="material-symbols-outlined btn-icon">call</span> <span
+                                data-en="Book a Consultation" data-ar="احجز استشارة">Book a Consultation</span></a>
+                        <a href="#about" class="btn btn-ghost" data-en="Learn More" data-ar="تعرف علينا">Learn More</a>
+                    </div>
+                </div>
+
+                <div class="hero-image reveal">
+                    <div class="hero-image-frame">
+                        <img src="images/Dr.Amira.jpg" alt="Dr. Amira Badawy">
+                    </div>
+                    <div class="hero-badge">
+                        <span class="badge-check"><span class="material-symbols-outlined">verified</span></span>
+                        <span data-en="Alexandria University Professor" data-ar="أستاذ جامعة الإسكندرية">Alexandria
+                            University Professor</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ====== ABOUT ====== -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="reveal">
+                    <span class="section-label" data-en="ABOUT THE DOCTOR" data-ar="عن الدكتورة">ABOUT THE DOCTOR</span>
+                    <div class="about-quote"
+                        data-en="Women's health is not a luxury — it is the foundation of family and community well-being."
+                        data-ar="صحة المرأة ليست رفاهية.. هي أساس صحة الأسرة والمجتمع">
+                        Women's health is not a luxury — it is the foundation of family and community well-being.
+                    </div>
+                    <p class="about-text"
+                        data-en="Dr. Amira Badawy combines deep academic expertise as a professor at the Faculty of Medicine, Alexandria University, with over two decades of clinical experience handling the most intricate medical and surgical cases."
+                        data-ar="تجمع الدكتورة أميرة بدوي بين الخبرة الأكاديمية العميقة كأستاذة في كلية الطب بجامعة الإسكندرية، وبين الخبرة العملية الممتدة لأكثر من عقدين في التعامل مع أدق الحالات الطبية والجراحية.">
+                        Dr. Amira Badawy combines deep academic expertise as a professor at the Faculty of Medicine,
+                        Alexandria University, with over two decades of clinical experience handling the most intricate
+                        medical and surgical cases.
+                    </p>
+                    <div class="about-tags">
+                        <span class="about-tag" data-en="Alexandria University Professor"
+                            data-ar="أستاذ جامعة الإسكندرية">Alexandria University Professor</span>
+                        <span class="about-tag" data-en="Gynecological Oncology Consultant"
+                            data-ar="استشاري أورام نسائية">Gynecological Oncology Consultant</span>
+                        <span class="about-tag" data-en="20+ Years Experience" data-ar="خبرة +20 سنة">20+ Years
+                            Experience</span>
+                        <span class="about-tag" data-en="British Fellowship" data-ar="زمالة بريطانية">British
+                            Fellowship</span>
+                    </div>
+                    <a href="#services" class="btn btn-ghost" data-en="Discover Our Services"
+                        data-ar="اكتشف خدماتنا">Discover Our Services</a>
+                </div>
+                <div class="about-image reveal">
+                    <div class="about-image-frame">
+                        <img src="images/about.jpg" alt="Clinic Area">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ====== SERVICES ====== -->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="services-header reveal">
+                <span class="section-label" data-en="OUR SERVICES" data-ar="خدماتنا">OUR SERVICES</span>
+                <h2 data-en="Specialized Medical Services" data-ar="خدماتنا المتخصصة">Specialized Medical Services</h2>
+            </div>
+
+            <div class="bento-grid">
+                <div class="bento-card reveal">
+                    <span class="bento-num">01</span>
+                    <div class="bento-icon-wrap"><span class="material-symbols-outlined bento-icon">biotech</span></div>
+                    <h3 data-en="Early Cancer Detection & Precision Surgery"
+                        data-ar="الكشف المبكر للأورام والجراحات الدقيقة">Early Cancer Detection & Precision Surgery</h3>
+                    <p data-en="Utilizing the latest global technologies for early detection and advanced surgical intervention with the highest safety standards."
+                        data-ar="نستخدم أحدث التقنيات العالمية للكشف المبكر والتدخل الجراحي المتقدم بأعلى معايير الأمان">
+                        Utilizing the latest global technologies for early detection and advanced surgical intervention
+                        with the highest safety standards.</p>
+                </div>
+                <div class="bento-card reveal">
+                    <span class="bento-num">02</span>
+                    <div class="bento-icon-wrap"><span class="material-symbols-outlined">monitor_heart</span></div>
+                    <h3 data-en="Advanced Laparoscopy" data-ar="المناظير المتقدمة">Advanced Laparoscopy</h3>
+                    <p data-en="Same-day surgeries with the latest laparoscopic equipment for minimal pain and faster recovery."
+                        data-ar="جراحات اليوم الواحد بأحدث أجهزة المناظير لتقليل الألم وسرعة التعافي">Same-day surgeries
+                        with the latest laparoscopic equipment for minimal pain and faster recovery.</p>
+                </div>
+                <div class="bento-card reveal">
+                    <span class="bento-num">03</span>
+                    <div class="bento-icon-wrap"><span class="material-symbols-outlined">pregnant_woman</span></div>
+                    <h3 data-en="Pregnancy Care" data-ar="متابعة الحمل">Pregnancy Care</h3>
+                    <p data-en="A safe journey from day one through the moment of delivery."
+                        data-ar="رحلة آمنة من اليوم الأول وحتى لحظة الولادة">A safe journey from day one through the
+                        moment of delivery.</p>
+                </div>
+                <div class="bento-card reveal">
+                    <span class="bento-num">04</span>
+                    <div class="bento-icon-wrap"><span class="material-symbols-outlined">fertility</span></div>
+                    <h3 data-en="Infertility Treatment" data-ar="تأخر الإنجاب">Infertility Treatment</h3>
+                    <p data-en="Advanced scientific solutions to help fulfill the dream of motherhood."
+                        data-ar="حلول علمية متطورة لتحقيق حلم الأمومة">Advanced scientific solutions to help fulfill the
+                        dream of motherhood.</p>
+                </div>
+                <div class="bento-card reveal">
+                    <span class="bento-num">05</span>
+                    <div class="bento-icon-wrap"><span
+                            class="material-symbols-outlined bento-icon">health_and_safety</span></div>
+                    <h3 data-en="Comprehensive Screening & Pap Smear" data-ar="الفحص الدوري الشامل ومسحة عنق الرحم">
+                        Comprehensive Screening & Pap Smear</h3>
+                    <p data-en="Regular comprehensive check-ups to monitor women's health and early detection of potential issues."
+                        data-ar="فحوصات شاملة دورية للاطمئنان على صحة المرأة وكشف مبكر عن أي مشاكل محتملة">Regular
+                        comprehensive check-ups to monitor women's health and early detection of potential issues.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ====== WHY US ====== -->
+    <section class="why-us" id="why-us">
+        <div class="container">
+            <div class="why-us-header reveal">
+                <span class="section-label" data-en="WHY CHOOSE US" data-ar="لماذا تختارين عيادتنا؟">WHY CHOOSE
+                    US</span>
+                <h2 data-en="What Sets Us Apart" data-ar="نتميز بما يناسبك">What Sets Us Apart</h2>
+            </div>
+            <div class="why-cards">
+                <div class="why-card reveal">
+                    <div class="card-icon"><span class="material-symbols-outlined">group</span></div>
+                    <h3 data-en="100% Female Medical Team" data-ar="فريق طبي نسائي 100%">100% Female Medical Team</h3>
+                    <p data-en="Complete privacy and comfort at every visit."
+                        data-ar="خصوصية تامة وراحة نفسية في كل زيارة">Complete privacy and comfort at every visit.</p>
+                </div>
+                <div class="why-card reveal">
+                    <div class="card-icon"><span class="material-symbols-outlined">location_on</span></div>
+                    <h3 data-en="3 Branches in Alexandria" data-ar="3 فروع بالإسكندرية">3 Branches in Alexandria</h3>
+                    <p data-en="Located in Smouha, Laurent, and Downtown to serve you."
+                        data-ar="نتواجد في سموحة ولوران ووسط البلد لخدمتكم">Located in Smouha, Laurent, and Downtown to
+                        serve you.</p>
+                </div>
+                <div class="why-card reveal">
+                    <div class="card-icon"><span class="material-symbols-outlined">workspace_premium</span></div>
+                    <h3 data-en="20+ Years of Expertise" data-ar="+20 سنة خبرة">20+ Years of Expertise</h3>
+                    <p data-en="Academic and clinical experience ensuring the most accurate diagnoses."
+                        data-ar="خبرة أكاديمية وعملية تضمن لكِ أدق التشخيصات">Academic and clinical experience ensuring
+                        the most accurate diagnoses.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ====== TESTIMONIALS ====== -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="testimonial-wrap reveal">
+                <div class="testimonial-quote-mark"><span class="material-symbols-outlined">format_quote</span></div>
+
+                <div class="testimonial-carousel">
+                    <!-- Review 1 -->
+                    <div class="testimonial-item active">
+                        <p class="testimonial-text"
+                            data-en="My experience with Dr. Amira was a turning point. Exceptionally professional with an amazing ability to reassure patients and explain every medical detail simply. The clinic is very elegant and the service is top-notch."
+                            data-ar="تجربتي مع د. أميرة كانت نقطة تحول، احترافية عالية جداً وقدرة مذهلة على طمأنة المريضة وشرح كل التفاصيل العلمية ببساطة. العيادة راقية جداً والتعامل قمة في الرقي.">
+                            My experience with Dr. Amira was a turning point. Exceptionally professional with an amazing
+                            ability to reassure patients and explain every medical detail simply. The clinic is very
+                            elegant and the service is top-notch.
+                        </p>
+                        <div class="testimonial-author">
+                            <div class="testimonial-avatar">S.A</div>
+                            <div class="testimonial-name" data-en="Former Patient" data-ar="مريضة سابقة">Former Patient
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Review 2 -->
+                    <div class="testimonial-item">
+                        <p class="testimonial-text"
+                            data-en="Dr. Amira is an angel. She accompanied me throughout my entire pregnancy and delivered my healthy baby girl safely. Her calmness and expertise made all my fears disappear. Cannot recommend her enough."
+                            data-ar="الدكتورة أميرة ملاك، تابعت معايا طوال فترة حملي وولدت بنتي بأمان تام، هدوئها وخبرتها خلوا كل مخاوفي تختفي. مستحيل أروح لدكتورة غيرها.">
+                            Dr. Amira is an angel. She accompanied me throughout my entire pregnancy and delivered my
+                            healthy baby girl safely. Her calmness and expertise made all my fears disappear. Cannot
+                            recommend her enough.
+                        </p>
+                        <div class="testimonial-author">
+                            <div class="testimonial-avatar">M.K</div>
+                            <div class="testimonial-name" data-en="Mother of two" data-ar="أم لطفلين">Mother of two
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Review 3 -->
+                    <div class="testimonial-item">
+                        <p class="testimonial-text"
+                            data-en="After years of struggling with infertility, Dr. Amira's advanced treatments and continuous support finally helped us start our family. The entire female team at the Smouha branch was wonderful."
+                            data-ar="بعد سنوات من المعاناة مع تأخر الإنجاب، بفضل الله ثم علاجات الدكتورة أميرة ودعمها المستمر قدرنا أخيراً نبدأ أسرتنا. كل الطاقم النسائي في فرع سموحة رائع جداً.">
+                            After years of struggling with infertility, Dr. Amira's advanced treatments and continuous
+                            support finally helped us start our family. The entire female team at the Smouha branch was
+                            wonderful.
+                        </p>
+                        <div class="testimonial-author">
+                            <div class="testimonial-author">
+                                <div class="testimonial-avatar">R.N</div>
+                                <div class="testimonial-name" data-en="IVF Patient" data-ar="مريضة حقن مجهري">IVF
+                                    Patient</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-dots">
+                    <span class="testimonial-dot active" data-index="0"></span>
+                    <span class="testimonial-dot" data-index="1"></span>
+                    <span class="testimonial-dot" data-index="2"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ====== CONTACT & BOOKING ====== -->
+    <section class="contact-section" id="book">
+        <div class="container">
+            <div class="contact-grid">
+                <!-- Location & Info -->
+                <div class="contact-info reveal">
+                    <span class="section-label" data-en="GET IN TOUCH" data-ar="تواصل معنا">GET IN TOUCH</span>
+                    <h2 data-en="Visit Our Clinic" data-ar="زوروا عيادتنا">Visit Our Clinic</h2>
+                    <p class="contact-desc" data-en="We are ready to provide you with the best healthcare. Book your appointment or visit us directly at our main branch." data-ar="مستعدون لتقديم أفضل رعاية صحية لكِ. احجزي موعدك أو تفضلي بزيارتنا في فرعنا الرئيسي.">
+                        We are ready to provide you with the best healthcare. Book your appointment or visit us directly at our main branch.
+                    </p>
+                    
+                    <div class="info-list">
+                        <div class="info-item">
+                            <span class="material-symbols-outlined icon">location_on</span>
+                            <div>
+                                <h4 data-en="Address" data-ar="العنوان">Address</h4>
+                                <p data-en="Port Said St, Cleopatra Sq, Cleopatra Class building, Alexandria, Egypt, 21618" data-ar="شارع بورسعيد، ميدان كليوباترا، عمارة كليوباترا كلاس، الإسكندرية، مصر، 21618">Port Said St, Cleopatra Sq, Cleopatra Class building, Alexandria, Egypt, 21618</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <span class="material-symbols-outlined icon">call</span>
+                            <div>
+                                <h4 data-en="Phone" data-ar="الهاتف">Phone</h4>
+                                <p>01220209220<br>035 466 4643</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="map-container">
+                        <iframe 
+                            src="https://www.google.com/maps?q=31.219795,29.931643&hl=en&z=15&output=embed" 
+                            width="100%" 
+                            height="250" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                </div>
+
+                <!-- Dummy Form -->
+                <div class="contact-form-wrapper reveal">
+                    <div class="form-card">
+                        <h3 data-en="Book an Appointment" data-ar="احجز موعد">Book an Appointment</h3>
+                        <p data-en="Fill out the form below and our receptionist will contact you to confirm the date." data-ar="املي النموذج التالي وسيقوم موظف الاستقبال بالتواصل معك لتأكيد الموعد.">Fill out the form below and our receptionist will contact you to confirm the date.</p>
+                        
+                        <form id="dummyBookingForm" class="booking-form" onsubmit="event.preventDefault(); alert('This is a dummy form! Booking logic will be set up inside WordPress.');">
+                            <div class="form-group">
+                                <label data-en="Full Name" data-ar="الاسم بالكامل">Full Name</label>
+                                <input type="text" required>
+                            </div>
+                            <div class="form-group">
+                                <label data-en="Phone Number" data-ar="رقم الهاتف">Phone Number</label>
+                                <input type="tel" required>
+                            </div>
+                            <div class="form-group">
+                                <label data-en="Service Needed" data-ar="الخدمة المطلوبة">Service Needed</label>
+                                <select required>
+                                    <option value="" disabled selected data-en="Select a service" data-ar="اختر الخدمة">Select a service</option>
+                                    <option data-en="General Checkup" data-ar="كشف عام">General Checkup</option>
+                                    <option data-en="Pregnancy Follow-up" data-ar="متابعة حمل">Pregnancy Follow-up</option>
+                                    <option data-en="Gynecological Oncology" data-ar="أورام نسائية">Gynecological Oncology</option>
+                                </select>
+                            </div>
+                            <button type="submit" class="btn btn-plum form-submit" data-en="Request Appointment" data-ar="طلب حجز موعد">Request Appointment</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer" id="contact">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <img src="images/logo.jpg" alt="Amira Clinic Logo" class="footer-logo">
+                    <div class="footer-tagline" data-en="Always With You ♥" data-ar="دايماً معاكم ♥">Always With You ♥
+                    </div>
+                    <p data-en="Professor of Obstetrics & Gynecology and Infertility Treatment — Consultant in Gynecological Oncology and Advanced Laparoscopy at Alexandria University."
+                        data-ar="أستاذ أمراض النساء والتوليد وعلاج العقم — استشاري الأورام النسائية والمناظير المتقدمة بجامعة الإسكندرية">
+                        Professor of Obstetrics & Gynecology and Infertility Treatment — Consultant in Gynecological
+                        Oncology and Advanced Laparoscopy at Alexandria University.</p>
+                </div>
+                <div class="footer-col">
+                    <h4 data-en="Quick Links" data-ar="روابط سريعة">Quick Links</h4>
+                    <a href="#hero" data-en="Home" data-ar="الرئيسية">Home</a>
+                    <a href="#about" data-en="About" data-ar="عن الدكتورة">About</a>
+                    <a href="#services" data-en="Services" data-ar="خدماتنا">Services</a>
+                    <a href="#contact" data-en="Contact" data-ar="تواصل معنا">Contact</a>
+                </div>
+                <div class="footer-col">
+                    <h4 data-en="Our Branches" data-ar="فروعنا">Our Branches</h4>
+                    <a href="#" data-en="Smouha — Alexandria" data-ar="سموحة — الإسكندرية">Smouha — Alexandria</a>
+                    <a href="#" data-en="Laurent — Alexandria" data-ar="لوران — الإسكندرية">Laurent — Alexandria</a>
+                    <a href="#" data-en="Downtown — Alexandria" data-ar="وسط البلد — الإسكندرية">Downtown —
+                        Alexandria</a>
+                </div>
+                <div class="footer-col">
+                    <h4 data-en="Contact Us" data-ar="تواصل معنا">Contact Us</h4>
+                    <a href="tel:+201220209220"><span class="material-symbols-outlined footer-link-icon">call</span>
+                        01220209220</a>
+                    <a href="tel:+20354664643"><span class="material-symbols-outlined footer-link-icon">call</span> 035
+                        466 4643</a>
+                    <a href="https://www.facebook.com/Dramirabadawy" target="_blank"><span
+                            class="material-symbols-outlined footer-link-icon">open_in_new</span> Facebook</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p data-en="© 2026 Gyn Clinics — Dr. Amira Badawy | All Rights Reserved"
+                    data-ar="© 2026 عيادات جايني — د. أميرة بدوى | جميع الحقوق محفوظة">© 2026 Gyn Clinics — Dr. Amira
+                    Badawy | All Rights Reserved</p>
+                <div class="footer-social">
+                    <a href="https://www.facebook.com/Dramirabadawy" target="_blank" aria-label="Facebook">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+                        </svg>
+                    </a>
+                    <a href="#" aria-label="Instagram">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z" />
+                        </svg>
+                    </a>
+                    <a href="#" aria-label="WhatsApp">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
