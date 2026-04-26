@@ -4,7 +4,7 @@ Theme URI: https://gynclinic.com
 Author: Ma3n Dev
 Author URI: https://github.com/ma3n77
 Description: Custom editorial-style theme for Dr. Amira Badawy Gyn Clinic. Premium feminine medical design with plum, gold, and cream palette.
-Version: 1.0
+Version: 1.1
 License: GNU General Public License v2 or later
 Text Domain: amira-clinic
 Tags: rtl-language-support, custom-menu, custom-logo
@@ -275,14 +275,15 @@ h3 { font-size: clamp(1.2rem, 2vw, 1.5rem); }
     z-index: 1000;
     padding: 20px 0;
     transition: all 0.4s ease;
+    background: transparent;
 }
 
 .site-header.scrolled {
-    background: rgba(253, 249, 246, 0.92);
+    padding: 12px 0;
+    background: rgba(255, 255, 255, 0.95);
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
-    padding: 12px 0;
-    box-shadow: 0 4px 24px rgba(55, 1, 23, 0.04);
+    box-shadow: 0 4px 24px rgba(55, 1, 23, 0.08);
 }
 
 .nav-inner {
@@ -313,8 +314,9 @@ h3 { font-size: clamp(1.2rem, 2vw, 1.5rem); }
 .nav-menu a {
     font-size: 0.9rem;
     font-weight: 500;
-    color: var(--text-secondary);
+    color: rgba(255, 255, 255, 0.9);
     position: relative;
+    transition: color 0.3s ease;
 }
 
 .nav-menu a::after {
@@ -328,8 +330,16 @@ h3 { font-size: clamp(1.2rem, 2vw, 1.5rem); }
     transition: width 0.3s ease;
 }
 
-.nav-menu a:hover { color: var(--plum); }
+.nav-menu a:hover { color: #ffffff; }
 .nav-menu a:hover::after { width: 100%; }
+
+/* Scrolled state */
+.site-header.scrolled .nav-menu a {
+    color: var(--text-secondary);
+}
+.site-header.scrolled .nav-menu a:hover {
+    color: var(--plum);
+}
 
 .nav-actions {
     display: flex;
@@ -340,15 +350,26 @@ h3 { font-size: clamp(1.2rem, 2vw, 1.5rem); }
 .lang-toggle {
     font-size: 0.85rem;
     font-weight: 500;
-    color: var(--text-muted);
+    color: #ffffff;
     padding: 6px 14px;
     border-radius: var(--radius-full);
-    background: var(--surface-low);
+    background: rgba(255, 255, 255, 0.15);
     cursor: pointer;
     transition: all 0.3s;
 }
 
 .lang-toggle:hover {
+    background: rgba(255, 255, 255, 0.25);
+    color: #ffffff;
+}
+
+/* Scrolled state */
+.site-header.scrolled .lang-toggle {
+    background: var(--surface-low);
+    color: var(--text-muted);
+}
+
+.site-header.scrolled .lang-toggle:hover {
     background: var(--surface-high);
     color: var(--text-primary);
 }
@@ -382,25 +403,24 @@ h3 { font-size: clamp(1.2rem, 2vw, 1.5rem); }
    HERO SECTION
    ============================================ */
 .hero {
-    min-height: 100vh;
-    padding: 200px 0 120px;
+    min-height: 90vh;
+    padding: 180px 0 100px;
     position: relative;
     overflow: visible;
-    background: var(--surface-low); /* Slightly off-white for depth */
+    background: var(--surface-white); /* Pure white for a cleaner look */
 }
 
 .hero-grid {
     display: grid;
-    grid-template-columns: 1fr 480px;
-    gap: 80px;
+    grid-template-columns: 1fr 500px; /* Slightly wider image */
+    gap: 100px; /* More airy gap */
     align-items: center;
-    min-height: calc(100vh - 320px);
+    min-height: calc(90vh - 280px);
 }
 
 .hero-image {
     position: relative;
     z-index: 2;
-    transform: translateX(40px); /* Overlap effect */
 }
 
 .hero-image-frame {
@@ -569,25 +589,7 @@ h3 { font-size: clamp(1.2rem, 2vw, 1.5rem); }
 
 /* Decorative */
 .hero-deco {
-    position: absolute;
-    border-radius: 50%;
-    z-index: 0;
-}
-
-.hero-deco-1 {
-    width: 500px;
-    height: 500px;
-    background: radial-gradient(circle, rgba(82,21,44,0.04), transparent 70%);
-    top: -100px;
-    left: -200px;
-}
-
-.hero-deco-2 {
-    width: 300px;
-    height: 300px;
-    background: radial-gradient(circle, rgba(200,153,90,0.06), transparent 70%);
-    bottom: 0;
-    right: 10%;
+    display: none; /* Removed for a cleaner look */
 }
 
 /* ============================================
@@ -693,26 +695,25 @@ h3 { font-size: clamp(1.2rem, 2vw, 1.5rem); }
 .bento-card {
     background: var(--surface-white);
     border-radius: var(--radius-lg);
-    padding: 48px 40px;
+    padding: 56px 48px; /* Increased padding for airy feel */
     position: relative;
     overflow: hidden;
     transition: all 0.4s cubic-bezier(0.25, 0, 0, 1);
     display: flex;
     flex-direction: column;
-    box-shadow: var(--shadow-soft);
-    border: 1px solid var(--outline);
+    box-shadow: 0 12px 36px rgba(0,0,0,0.03); /* Softer shadow */
+    border: none; /* Removed border for cleaner look */
 }
 
 .bento-card:hover {
     transform: translateY(-8px);
-    box-shadow: var(--shadow-plum);
-    border-color: transparent;
+    box-shadow: 0 20px 48px rgba(62, 16, 33, 0.08); /* More pronounced lift */
 }
 
 .bento-card.featured {
     background: var(--plum);
     color: var(--text-on-plum);
-    border: none;
+    box-shadow: 0 16px 40px rgba(62, 16, 33, 0.15);
 }
 
 .bento-card.featured h3 { color: var(--text-on-plum); }
@@ -738,14 +739,14 @@ h3 { font-size: clamp(1.2rem, 2vw, 1.5rem); }
 }
 
 .bento-icon-wrap {
-    width: 64px;
-    height: 64px;
+    width: 80px;
+    height: 80px;
     background: var(--surface-low);
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 24px;
+    margin-bottom: 32px;
 }
 
 .bento-card.featured .bento-icon-wrap {
@@ -773,77 +774,93 @@ h3 { font-size: clamp(1.2rem, 2vw, 1.5rem); }
    WHY US — OVERLAPPING CARDS
    ============================================ */
 .why-us {
-    padding: 160px 0;
-    background: var(--surface-white);
+    padding: 120px 0 100px 0;
+    background: var(--surface-low); /* Revert to bright/airy off-white */
     overflow: hidden;
 }
 
-.why-us-header {
-    text-align: center;
-    margin-bottom: 80px;
-}
-
-.why-cards {
-    display: flex;
-    justify-content: center;
-    gap: 24px;
+.why-staggered-container {
     max-width: 900px;
     margin: 0 auto;
 }
 
-.why-card {
-    background: var(--surface-white);
-    border-radius: var(--radius-xl);
-    padding: 56px 40px;
-    text-align: center;
-    flex: 1;
-    transition: all 0.4s cubic-bezier(0.25, 0, 0, 1);
-    box-shadow: var(--shadow-soft);
-    border: 1px solid var(--outline);
+.why-us-header-staggered {
+    text-align: left;
+    margin-bottom: 64px;
+    padding-left: 20px;
 }
 
-.why-card:nth-child(2) {
-    transform: translateY(-24px);
-    box-shadow: 0 24px 48px rgba(62, 16, 33, 0.08);
+.why-staggered-list {
+    display: flex;
+    flex-direction: column;
 }
 
-.why-card:hover {
-    transform: translateY(-12px);
-    box-shadow: var(--shadow-plum);
-    border-color: transparent;
-}
-
-.why-card .card-icon {
-    width: 64px;
-    height: 64px;
-    margin: 0 auto 20px;
-    border-radius: 50%;
+.why-staggered-item {
     display: flex;
     align-items: center;
-    justify-content: center;
-    font-size: 1.5rem;
+    gap: 60px;
+    padding: 48px 20px;
+    border-bottom: 1px solid rgba(212, 176, 140, 0.4); /* Elegant gold divider */
 }
 
-.why-card:nth-child(1) .card-icon { background: rgba(82,21,44,0.08); }
-.why-card:nth-child(2) .card-icon { background: var(--gold-muted); }
-.why-card:nth-child(3) .card-icon { background: rgba(82,21,44,0.08); }
-
-.why-card h3 {
-    font-size: 1.1rem;
-    margin-bottom: 8px;
+.why-staggered-item:last-child {
+    border-bottom: none;
 }
 
-.why-card p {
-    font-size: 0.85rem;
-    color: var(--text-muted);
-    line-height: 1.5;
+.staggered-number {
+    font-family: var(--font-heading);
+    font-size: 7rem;
+    font-weight: 700;
+    line-height: 1;
+    color: var(--gold);
+    min-width: 200px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.03);
+}
+
+.staggered-number .staggered-symbol {
+    font-size: 3.5rem;
+    color: var(--gold-dark);
+}
+
+.staggered-content {
+    flex: 1;
+}
+
+.staggered-content h3 {
+    font-size: 1.6rem;
+    color: var(--plum-dark);
+    margin-bottom: 12px;
+}
+
+.staggered-content p {
+    color: var(--text-medium);
+    font-size: 1.05rem;
+    line-height: 1.6;
+}
+
+/* Mobile Responsiveness for Staggered Layout */
+@media (max-width: 768px) {
+    .why-staggered-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+        padding: 40px 0;
+    }
+    .why-us-header-staggered {
+        text-align: center;
+        padding-left: 0;
+    }
+    .staggered-number {
+        font-size: 5rem;
+        min-width: auto;
+    }
 }
 
 /* ============================================
    TESTIMONIALS
    ============================================ */
 .testimonials {
-    padding: 120px 0;
+    padding: 60px 0 120px 0; /* Reduced top padding */
 }
 
 .testimonial-wrap {
@@ -1221,4 +1238,368 @@ h3 { font-size: clamp(1.2rem, 2vw, 1.5rem); }
     .why-card:nth-child(2) { transform: none; }
     .footer-grid { grid-template-columns: 1fr; }
     .footer-bottom { flex-direction: column; gap: 16px; text-align: center; }
+}
+
+/* ============================================
+   RADICAL NEW BAY MEDICAL LAYOUT
+   ============================================ */
+
+.hero {
+    min-height: 90vh;
+    padding: 0;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    background-image: url('images/about.jpg'); /* fallback */
+}
+
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to right, rgba(37, 6, 17, 0.9) 0%, rgba(37, 6, 17, 0.4) 100%);
+    z-index: 1;
+}
+
+.hero-container {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+}
+
+.hero-content {
+    max-width: 600px;
+}
+
+.hero-title {
+    color: #ffffff;
+    font-size: clamp(3rem, 6vw, 4.5rem);
+    margin-bottom: 24px;
+}
+
+.hero-subtitle {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 1.1rem;
+    margin-bottom: 40px;
+}
+
+/* OVERLAP SECTION */
+.overlap-section {
+    position: relative;
+    padding: 0 0 120px 0;
+    margin-top: -100px; /* The overlap magic */
+    z-index: 3;
+    background: transparent;
+}
+
+.overlap-card {
+    background: var(--surface-white);
+    border-radius: var(--radius-xl);
+    padding: 80px;
+    box-shadow: 0 24px 60px rgba(62, 16, 33, 0.08);
+}
+
+.about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    align-items: center;
+}
+
+.about-image-frame {
+    width: 100%;
+    height: 500px;
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+}
+
+.about-image-frame img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* SERVICES IMAGE CARDS */
+.services {
+    padding: 120px 0;
+    background: var(--surface-low);
+}
+
+.services-image-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 40px;
+}
+
+.service-image-card {
+    background: var(--surface-white);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.04);
+    transition: transform 0.4s ease;
+}
+
+.service-image-card:hover {
+    transform: translateY(-8px);
+}
+
+.service-img-wrapper {
+    height: 240px;
+    overflow: hidden;
+}
+
+.service-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.6s ease;
+}
+
+.service-image-card:hover .service-img {
+    transform: scale(1.05);
+}
+
+.service-card-content {
+    padding: 32px;
+}
+
+.service-card-content h3 {
+    font-size: 1.4rem;
+    color: var(--plum);
+    margin-bottom: 16px;
+}
+
+.service-card-content p {
+    color: var(--text-muted);
+    font-size: 0.95rem;
+    margin-bottom: 24px;
+}
+
+.btn-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--gold);
+    font-weight: 600;
+    font-size: 0.95rem;
+}
+
+.btn-link:hover {
+    color: var(--plum);
+}
+
+/* ============================================
+   RESPONSIVE FIXES FOR NEW LAYOUT
+   ============================================ */
+
+/* Fix hamburger menu color on transparent background */
+.site-header:not(.scrolled) .nav-toggle span {
+    background: #ffffff;
+}
+
+@media (max-width: 1024px) {
+    .about-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+    .overlap-card {
+        padding: 40px;
+    }
+    .about-image-frame {
+        height: 400px;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero {
+        align-items: center;
+        text-align: center;
+    }
+    .hero-content {
+        margin: 0 auto;
+    }
+    .hero-overlay {
+        background: rgba(37, 6, 17, 0.7); /* Even dark overlay on mobile */
+    }
+    .hero-title {
+        font-size: 2.5rem;
+    }
+    .overlap-section {
+        margin-top: -60px;
+        padding-bottom: 60px;
+    }
+    .overlap-card {
+        padding: 24px;
+        border-radius: var(--radius-lg);
+    }
+    .about-image-frame {
+        height: 300px;
+    }
+    .services {
+        padding: 60px 0;
+    }
+    .services-image-grid {
+        grid-template-columns: 1fr;
+    }
+    .hero-buttons {
+        flex-direction: column;
+        width: 100%;
+        align-items: stretch;
+    }
+    .hero-buttons .btn {
+        width: 100%;
+        justify-content: center;
+    }
+    
+    /* Fix mobile menu text colors since header is transparent */
+    .site-header .nav-menu.active {
+        background: var(--surface-white);
+    }
+    .site-header .nav-menu.active a {
+        color: var(--text-secondary);
+    }
+    .site-header .nav-menu.active a:hover {
+        color: var(--plum);
+    }
+}
+
+
+/* ============================================
+   PREMIUM SERVICES LAYOUT
+   ============================================ */
+
+.services-premium-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+}
+
+.service-premium-card {
+    position: relative;
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    height: 400px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.06);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    cursor: pointer;
+}
+
+/* Make first 2 cards larger/wider */
+.service-premium-card.large-card {
+    grid-column: span 1; /* By default span 1 */
+}
+
+/* Using a special grid layout on desktop */
+@media (min-width: 1025px) {
+    .services-premium-grid {
+        grid-template-columns: repeat(6, 1fr);
+    }
+    .service-premium-card.large-card {
+        grid-column: span 3;
+        height: 460px;
+    }
+    .service-premium-card:not(.large-card) {
+        grid-column: span 2;
+        height: 380px;
+    }
+}
+
+.service-premium-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.12);
+}
+
+.service-premium-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.service-premium-card:hover .service-premium-bg {
+    transform: scale(1.08);
+}
+
+.service-premium-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(37, 6, 17, 0.95) 0%, rgba(37, 6, 17, 0.4) 50%, transparent 100%);
+    transition: opacity 0.4s ease;
+}
+
+.service-premium-card:hover .service-premium-overlay {
+    opacity: 0.9; /* Slightly darker on hover to make text pop even more */
+}
+
+.service-premium-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 40px 32px;
+    z-index: 2;
+}
+
+.service-premium-content h3 {
+    color: #ffffff;
+    font-size: 1.5rem;
+    margin-bottom: 12px;
+    font-family: var(--font-heading);
+    transition: transform 0.4s ease;
+}
+
+.service-premium-card:hover .service-premium-content h3 {
+    transform: translateY(-4px);
+}
+
+.service-premium-desc {
+    color: rgba(255, 255, 255, 0.85);
+    font-size: 0.95rem;
+    margin-bottom: 24px;
+    line-height: 1.6;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    transition: color 0.4s ease;
+}
+
+.service-premium-card:hover .service-premium-desc {
+    color: #ffffff;
+}
+
+.service-premium-content .btn-link {
+    color: var(--gold);
+    transition: all 0.3s ease;
+}
+
+.service-premium-card:hover .btn-link {
+    color: var(--gold-light);
+    letter-spacing: 0.5px;
+}
+
+.service-premium-card:hover .btn-link span {
+    transform: translateX(6px);
+    transition: transform 0.3s ease;
+}
+
+/* Mobile responsive for premium grid */
+@media (max-width: 1024px) {
+    .services-premium-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .services-premium-grid {
+        grid-template-columns: 1fr;
+    }
+    .service-premium-card.large-card, .service-premium-card:not(.large-card) {
+        grid-column: span 1;
+        height: 380px;
+    }
 }
