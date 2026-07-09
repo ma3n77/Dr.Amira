@@ -55,8 +55,8 @@
                                 <div class="hero-stat-txt" data-en="Female Medical Team" data-ar="فريق نسائي لراحتكِ">Female Medical Team</div>
                             </div>
                             <div class="hero-stat">
-                                <div class="hero-stat-num">3</div>
-                                <div class="hero-stat-txt" data-en="Branches Serving You" data-ar="فروع لخدمتكِ">Branches Serving You</div>
+                                <div class="hero-stat-num">2</div>
+                                <div class="hero-stat-txt" data-en="Branches Serving You" data-ar="فرعان لخدمتكِ">Branches Serving You</div>
                             </div>
                         </div>
                     </div>
@@ -171,11 +171,11 @@
                 </div>
 
                 <div class="why-staggered-item">
-                    <div class="staggered-number">3</div>
+                    <div class="staggered-number">2</div>
                     <div class="staggered-content">
-                        <h3 data-en="Branches in Alexandria" data-ar="فروع بالإسكندرية">Branches in Alexandria</h3>
-                        <p data-en="Located in Smouha, Laurent, and Downtown always ready to serve and care for you."
-                            data-ar="نتواجد في سموحة ولوران ووسط البلد لخدمتكِ ورعايتكِ أينما كنتِ.">Located in Smouha, Laurent, and Downtown always ready to serve and care for you.</p>
+                        <h3 data-en="Branches in Alexandria & Damanhour" data-ar="فرعان بالإسكندرية ودمنهور">Branches in Alexandria & Damanhour</h3>
+                        <p data-en="Located in Alexandria and Damanhour, always ready to serve and care for you."
+                            data-ar="نتواجد في الإسكندرية ودمنهور لخدمتكِ ورعايتكِ أينما كنتِ.">Located in Alexandria and Damanhour, always ready to serve and care for you.</p>
                     </div>
                 </div>
 

@@ -20,10 +20,8 @@
                 </div>
                 <div class="footer-col">
                     <h4 data-en="Our Branches" data-ar="فروعنا">Our Branches</h4>
-                    <a href="#" data-en="Smouha — Alexandria" data-ar="سموحة — الإسكندرية">Smouha — Alexandria</a>
-                    <a href="#" data-en="Laurent — Alexandria" data-ar="لوران — الإسكندرية">Laurent — Alexandria</a>
-                    <a href="#" data-en="Downtown — Alexandria" data-ar="وسط البلد — الإسكندرية">Downtown —
-                        Alexandria</a>
+                    <a href="#contact" data-en="Alexandria Branch" data-ar="فرع الإسكندرية">Alexandria Branch</a>
+                    <a href="#contact" data-en="Damanhour Branch" data-ar="فرع دمنهور">Damanhour Branch</a>
                 </div>
                 <div class="footer-col">
                     <h4 data-en="Contact Us" data-ar="توتصلي معنا">Contact Us</h4>
