@@ -12,11 +12,11 @@
                         Oncology and Advanced Laparoscopy at Alexandria University.</p>
                 </div>
                 <div class="footer-col">
-                    <h4 data-en="Quick Links" data-ar="روابط سريعة">Quick Links</h4>
+                    <h4 data-en="Quick Links" data-ar="روابط سريعة لكِ">Quick Links</h4>
                     <a href="#hero" data-en="Home" data-ar="الرئيسية">Home</a>
                     <a href="#about" data-en="About" data-ar="عن الدكتورة">About</a>
                     <a href="#services" data-en="Services" data-ar="خدماتنا">Services</a>
-                    <a href="#contact" data-en="Contact" data-ar="تواصل معنا">Contact</a>
+                    <a href="#contact" data-en="Contact Us" data-ar="توتصلي معنا">Contact Us</a>
                 </div>
                 <div class="footer-col">
                     <h4 data-en="Our Branches" data-ar="فروعنا">Our Branches</h4>
@@ -26,7 +26,7 @@
                         Alexandria</a>
                 </div>
                 <div class="footer-col">
-                    <h4 data-en="Contact Us" data-ar="تواصل معنا">Contact Us</h4>
+                    <h4 data-en="Contact Us" data-ar="توتصلي معنا">Contact Us</h4>
                     <a href="tel:+201220209220"><span class="material-symbols-outlined footer-link-icon">call</span>
                         01220209220</a>
                     <a href="tel:+20354664643"><span class="material-symbols-outlined footer-link-icon">call</span> 035

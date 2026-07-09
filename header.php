@@ -25,12 +25,12 @@
                     <a href="#hero" data-en="Home" data-ar="الرئيسية">Home</a>
                     <a href="#about" data-en="About" data-ar="عن الدكتورة">About</a>
                     <a href="#services" data-en="Services" data-ar="خدماتنا">Services</a>
-                    <a href="#why-us" data-en="Why Us" data-ar="لماذا نحن">Why Us</a>
-                    <a href="#contact" data-en="Contact" data-ar="تواصل معنا">Contact</a>
+                    <a href="#why-us" data-en="Why Us" data-ar="لماذا تختارين عيادتنا">Why Us</a>
+                    <a href="#contact" data-en="Contact Us" data-ar="توتصلي معنا">Contact Us</a>
                 </nav>
                 <div class="nav-actions">
                     <button class="lang-toggle" id="langToggle" onclick="toggleLang()">عربي</button>
-                    <a href="#book" class="btn btn-plum" data-en="Book Appointment" data-ar="احجز موعد">Book Appointment</a>
+                    <a href="#book" class="btn btn-plum" data-en="Book Your Appointment" data-ar="احجزي موعدكِ">Book Your Appointment</a>
                 </div>
                 <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
                     <span></span><span></span><span></span>
