@@ -10,7 +10,7 @@
     <!-- Icons -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <!-- Favicon -->
-    <link rel="icon" type="image/jpeg" href="<?php echo get_template_directory_uri(); ?>/images/logo.jpg">
+    <link rel="icon" type="image/png" href="<?php echo get_template_directory_uri(); ?>/images/logo.png">
     <?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
@@ -19,7 +19,7 @@
         <div class="container">
             <div class="nav-inner">
                 <div class="nav-logo">
-                    <img src="<?php echo get_template_directory_uri(); ?>/images/logo.jpg" alt="Amira Clinic Logo">
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/logo.png" alt="Amira Clinic Logo">
                 </div>
                 <nav class="nav-menu" id="navMenu">
                     <a href="#hero" data-en="Home" data-ar="الرئيسية">Home</a>

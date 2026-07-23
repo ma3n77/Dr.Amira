@@ -3,7 +3,7 @@
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-brand">
-                    <img src="<?php echo get_template_directory_uri(); ?>/images/logo.jpg" alt="Amira Clinic Logo" class="footer-logo">
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/logo.png" alt="Amira Clinic Logo" class="footer-logo">
                     <div class="footer-tagline" data-en="Always With You ♥" data-ar="دايماً معاكم ♥">Always With You ♥
                     </div>
                     <p data-en="Professor of Obstetrics & Gynecology and Infertility Treatment — Consultant in Gynecological Oncology and Advanced Laparoscopy at Alexandria University."
@@ -25,10 +25,12 @@
                 </div>
                 <div class="footer-col">
                     <h4 data-en="Contact Us" data-ar="توتصلي معنا">Contact Us</h4>
-                    <a href="tel:+201220209220"><span class="material-symbols-outlined footer-link-icon">call</span>
-                        01220209220</a>
-                    <a href="tel:+20354664643"><span class="material-symbols-outlined footer-link-icon">call</span> 035
-                        466 4643</a>
+                    <a href="tel:01118244487" style="color: var(--gold); font-weight: 700;"><span class="material-symbols-outlined footer-link-icon" style="color: var(--gold);">support_agent</span>
+                        <span data-en="Call Center: 01118244487" data-ar="الكول سنتر: 01118244487">Call Center: 01118244487</span></a>
+                    <a href="tel:01220209220"><span class="material-symbols-outlined footer-link-icon">call</span>
+                        <span data-en="Alexandria: 01220209220" data-ar="الإسكندرية: 01220209220">Alexandria: 01220209220</span></a>
+                    <a href="tel:01149991403"><span class="material-symbols-outlined footer-link-icon">call</span>
+                        <span data-en="Damanhour: 01149991403" data-ar="دمنهور: 01149991403">Damanhour: 01149991403</span></a>
                     <a href="https://www.facebook.com/Dramirabadawy" target="_blank"><span
                             class="material-symbols-outlined footer-link-icon">open_in_new</span> Facebook</a>
                 </div>

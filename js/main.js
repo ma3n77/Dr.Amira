@@ -31,10 +31,8 @@ function applyLanguage(lang) {
         toggleBtn.textContent = lang === 'en' ? 'عربي' : 'EN';
     }
 
-    // Update font family for Arabic
-    document.body.style.fontFamily = lang === 'ar'
-        ? "'Noto Serif Arabic', 'Manrope', sans-serif"
-        : "'Manrope', 'Segoe UI', sans-serif";
+    // CSS handles font switching via [dir="rtl"] — no inline override needed
+    document.body.style.fontFamily = '';
 
     // Save preference
     localStorage.setItem('amira-lang', lang);
@@ -157,7 +155,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
     statNums.forEach(stat => statsObserver.observe(stat));
 
+    // ==========================================
     // Testimonial Carousel Logic
+    // ==========================================
     const testimonialDots = document.querySelectorAll('.testimonial-dot');
     const testimonialItems = document.querySelectorAll('.testimonial-item');
 
@@ -177,5 +177,44 @@ document.addEventListener('DOMContentLoaded', () => {
                 }
             });
         });
+    }
+
+    // ==========================================
+    // Hero Carousel — auto-advance only
+    // ==========================================
+    const heroSlides = document.querySelectorAll('.hero-slide');
+    const heroDotBtns = document.querySelectorAll('.hero-dot');
+    const heroSection = document.getElementById('hero');
+
+    let heroIndex = 0;
+    let heroTimer = null;
+    const HERO_INTERVAL = 3500; // 3.5 seconds per slide for faster switching
+
+    function goToSlide(index) {
+        const oldIndex = heroIndex;
+        const newIndex = (index + heroSlides.length) % heroSlides.length;
+        if (oldIndex === newIndex) return;
+
+        heroSlides.forEach(s => s.classList.remove('prev'));
+        heroSlides[oldIndex].classList.remove('active');
+        heroSlides[oldIndex].classList.add('prev');
+        heroDotBtns[oldIndex].classList.remove('active');
+
+        heroIndex = newIndex;
+        heroSlides[heroIndex].classList.add('active');
+        heroDotBtns[heroIndex].classList.add('active');
+    }
+
+    function startHeroTimer() {
+        heroTimer = setInterval(() => goToSlide(heroIndex + 1), HERO_INTERVAL);
+    }
+
+    if (heroSlides.length > 1) {
+        // Pause on hover, resume on leave
+        if (heroSection) {
+            heroSection.addEventListener('mouseenter', () => clearInterval(heroTimer));
+            heroSection.addEventListener('mouseleave', startHeroTimer);
+        }
+        startHeroTimer();
     }
 });

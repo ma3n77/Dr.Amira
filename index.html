@@ -16,7 +16,7 @@
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
 
     <!-- Favicon -->
-    <link rel="icon" type="image/jpeg" href="images/logo.jpg">
+    <link rel="icon" type="image/png" href="images/logo.png">
 
     <!-- CSS -->
     <link rel="stylesheet" href="style.css?v=2.2">
@@ -29,7 +29,7 @@
         <div class="container">
             <div class="nav-inner">
                 <div class="nav-logo">
-                    <img src="images/logo.jpg" alt="Amira Clinic Logo">
+                    <img src="images/logo.png" alt="Amira Clinic Logo">
                 </div>
 
                 <nav class="nav-menu" id="navMenu">
@@ -42,7 +42,8 @@
 
                 <div class="nav-actions">
                     <button class="lang-toggle" id="langToggle" onclick="toggleLang()">عربي</button>
-                    <a href="#book" class="btn btn-plum" data-en="Book Your Appointment" data-ar="احجزي موعدكِ">Book Your
+                    <a href="#book" class="btn btn-plum" data-en="Book Your Appointment" data-ar="احجزي موعدكِ">Book
+                        Your
                         Appointment</a>
                 </div>
 
@@ -54,23 +55,46 @@
     </header>
 
     <!-- ====== HERO ====== -->
-    <section class="hero" id="hero" style="background-image: url('images/landscape.jpg');">
+    <section class="hero" id="hero">
+
+        <!-- ===== CAROUSEL SLIDES ===== -->
+        <div class="hero-carousel" id="heroCarousel">
+            <div class="hero-slide active" style="background-image: url('images/hero-slide-1.png');"></div>
+            <div class="hero-slide" style="background-image: url('images/hero-slide-2.png');"></div>
+            <div class="hero-slide" style="background-image: url('images/hero-slide-3.png');"></div>
+            <div class="hero-slide" style="background-image: url('images/hero-slide-4.png');"></div>
+        </div>
+
+        <!-- Dark overlay -->
         <div class="hero-overlay"></div>
+
+        <!-- Dot Indicators -->
+        <div class="hero-dots" id="heroDots">
+            <span class="hero-dot active" data-slide="0"></span>
+            <span class="hero-dot" data-slide="1"></span>
+            <span class="hero-dot" data-slide="2"></span>
+            <span class="hero-dot" data-slide="3"></span>
+        </div>
+
+        <!-- Content -->
         <div class="container hero-container">
             <div class="hero-content reveal">
-                <h1 class="hero-title" data-en="Specialized Women's Healthcare Tailored For You" data-ar="رعاية صحية متخصصة ومصممة من أجلكِ">
+                <h1 class="hero-title" data-en="Specialized Women's Healthcare Tailored For You"
+                    data-ar="رعاية صحية متخصصة ومصممة من أجلكِ">
                     Specialized Women's Healthcare Tailored For You</h1>
                 <p class="hero-subtitle"
                     data-en="Prof. Dr. Amira Badawy — Professor of Obstetrics & Gynecology at Alexandria University. Over 20 years of excellence dedicated to providing you with comprehensive healthcare, advanced laparoscopy, and complete peace of mind."
-                    data-ar="أ.د. أميرة بدوى — أستاذ أمراض النساء والتوليد بجامعة الإسكندرية، خبرة تزيد عن 20 عاماً مكرسة لتقديم رعاية صحية متكاملة لكِ، وأحدث جراحات المناظير، ولضمان راحة بالكِ وسعادتكِ.">
+                    data-ar="أ.د. أميرة بدوى — أستاذ م. أمراض النساء والتوليد بجامعة الإسكندرية، خبرة تزيد عن 20 عاماً مكرسة لتقديم رعاية صحية متكاملة لكِ، وأحدث جراحات المناظير، ولضمان راحة بالكِ وسعادتكِ.">
                     Prof. Dr. Amira Badawy — Professor of Obstetrics & Gynecology at Alexandria University. Over 20
                     years of excellence dedicated to providing you with comprehensive healthcare, advanced laparoscopy,
                     and complete peace of mind.
                 </p>
                 <div class="hero-buttons">
                     <a href="#book" class="btn btn-plum"><span class="material-symbols-outlined btn-icon">call</span>
-                        <span data-en="Book Your Consultation" data-ar="احجزي استشارتكِ">Book Your Consultation</span></a>
-                    <a href="#about" class="btn btn-ghost" data-en="Discover Our Care" data-ar="تعرفي علينا">Discover Our Care</a>
+                        <span data-en="Book Your Consultation" data-ar="احجزي استشارتكِ">Book Your
+                            Consultation</span></a>
+                    <a href="#about" class="btn btn-ghost" data-en="Discover Our Care" data-ar="تعرفي علينا">Discover
+                        Our Care</a>
                 </div>
             </div>
         </div>
@@ -84,32 +108,62 @@
                     <div class="about-text-content">
                         <span class="section-label" data-en="ABOUT THE DOCTOR" data-ar="عن الدكتورة">ABOUT THE
                             DOCTOR</span>
-                        <div class="about-quote"
-                            data-en="Your health is not a luxury — you are the foundation of your family and community's well-being."
-                            data-ar="صحتكِ ليست رفاهية.. فأنتِ أساس صحة وسعادة الأسرة والمجتمع">
-                            Your health is not a luxury — you are the foundation of your family and community's well-being.
-                        </div>
-                        <p class="about-text"
-                            data-en="Dr. Amira Badawy combines deep academic expertise as a professor at the Faculty of Medicine, Alexandria University, with over two decades of clinical experience, dedicated to providing you with the safest, most precise, and compassionate care."
-                            data-ar="تجمع الدكتورة أميرة بدوي بين الخبرة الأكاديمية العميقة كأستاذة في كلية الطب بجامعة الإسكندرية، وبين الخبرة العملية الممتدة لأكثر من عقدين، لتقدم لكِ أدق وأفضل رعاية طبية تضمن صحتكِ وراحتكِ.">
-                            Dr. Amira Badawy combines deep academic expertise as a professor at the Faculty of Medicine,
-                            Alexandria University, with over two decades of clinical experience, dedicated to providing you
-                            with the safest, most precise, and compassionate care.
-                        </p>
+                        <h2 class="about-doctor-name" data-en="Prof. Dr. Amira Badawy" data-ar="أ.د. أميرة بدوي">
+                            Prof. Dr. Amira Badawy
+                        </h2>
 
-                        <div class="hero-stats"
-                            style="padding-top: 20px; border-top: 1px solid var(--outline); margin-top: 30px;">
-                            <div class="hero-stat">
-                                <div class="hero-stat-num large">20+</div>
-                                <div class="hero-stat-txt" data-en="Years of Care For You" data-ar="سنة خبرة لرعايتكِ">Years of Care For You</div>
+                        <ul class="about-credentials-list">
+                            <li>
+                                <span class="material-symbols-outlined">verified</span>
+                                <span
+                                    data-en="Professor of obstetrics & Gynaecology, Faculty of Medicine - Alexandria University"
+                                    data-ar="أستاذ. م أمراض النساء والتوليد وعلاج العقم بكلية الطب - جامعة الإسكندرية">
+                                    Professor of obstetrics & Gynaecology, Faculty of Medicine - Alexandria University
+                                </span>
+                            </li>
+                            <li>
+                                <span class="material-symbols-outlined">verified</span>
+                                <span data-en="Consultant Of Gyn - Oncology & Gyn - Endoscopy"
+                                    data-ar="إستشاري الأورام النسائية والمناظير">
+                                    Consultant Of Gyn - Oncology & Gyn - Endoscopy
+                                </span>
+                            </li>
+                            <li>
+                                <span class="material-symbols-outlined">verified</span>
+                                <span data-en="Member of ESGO / European society of Gyn. Oncologists"
+                                    data-ar="عضو الجمعية الأوروبية للأورام النسائية">
+                                    Member of ESGO / European society of Gyn. Oncologists
+                                </span>
+                            </li>
+                            <li>
+                                <span class="material-symbols-outlined">verified</span>
+                                <span data-en="Member of ESGE / European Society of Gyn. Laparoscopists"
+                                    data-ar="عضو الجمعية الأوروبية للمناظير النسائية">
+                                    Member of ESGE / European Society of Gyn. Laparoscopists
+                                </span>
+                            </li>
+                        </ul>
+
+                        <div class="doctor-insights-grid">
+                            <div class="insight-card">
+                                <div class="insight-num">30+</div>
+                                <div class="insight-label" data-en="Years of Experience"
+                                    data-ar="سنة خبرة طبية وأكاديمية">Years of Experience</div>
                             </div>
-                            <div class="hero-stat">
-                                <div class="hero-stat-num">100%</div>
-                                <div class="hero-stat-txt" data-en="Female Medical Team" data-ar="فريق نسائي لراحتكِ">Female Medical Team</div>
+                            <div class="insight-card">
+                                <div class="insight-num">+70</div>
+                                <div class="insight-label" data-en="Yearly Oncology Surgeries"
+                                    data-ar="جراحة أورام سنوياً">Yearly Oncology Surgeries</div>
                             </div>
-                            <div class="hero-stat">
-                                <div class="hero-stat-num">2</div>
-                                <div class="hero-stat-txt" data-en="Branches Serving You" data-ar="فرعان لخدمتكِ">Branches Serving You</div>
+                            <div class="insight-card">
+                                <div class="insight-num">+100</div>
+                                <div class="insight-label" data-en="Yearly Pregnancy Cases"
+                                    data-ar="حالة متابعة حمل وولادة سنوياً">Yearly Pregnancy Cases</div>
+                            </div>
+                            <div class="insight-card">
+                                <div class="insight-num">+250</div>
+                                <div class="insight-label" data-en="Yearly Laparoscopy Cases"
+                                    data-ar="حالة منظار متقدم سنوياً">Yearly Laparoscopy Cases</div>
                             </div>
                         </div>
                     </div>
@@ -127,18 +181,22 @@
     <section class="services" id="services">
         <div class="container">
             <div class="services-header-centered reveal" style="text-align: center; margin-bottom: 60px;">
-                <span class="section-label" data-en="SERVICES FOR YOU" data-ar="خدماتنا المقدمة لكِ">SERVICES FOR YOU</span>
-                <h2 data-en="Specialized Care Tailored For You" data-ar="خدمات طبية متخصصة ومصممة لكِ">Specialized Care Tailored For You</h2>
+                <span class="section-label" data-en="SERVICES FOR YOU" data-ar="خدماتنا المقدمة لكِ">SERVICES FOR
+                    YOU</span>
+                <h2 data-en="Specialized Care Tailored For You" data-ar="خدمات طبية متخصصة ومصممة لكِ">Specialized Care
+                    Tailored For You</h2>
             </div>
 
             <div class="services-premium-grid">
-                <!-- Service 1 (Large) -->
-                <div class="service-premium-card large-card reveal">
-                    <img src="images/service-cancer-hijabi.png" alt="Cancer Detection" class="service-premium-bg">
+                <!-- Service 1 -->
+                <div class="service-premium-card reveal">
+                    <img src="images/oncooo Image Jul 20, 2026 at 02_47_18 AM.png" alt="Cancer Detection"
+                        class="service-premium-bg">
                     <div class="service-premium-overlay"></div>
                     <div class="service-premium-content">
                         <h3 data-en="Early Cancer Detection & Precision Surgery"
-                            data-ar="الكشف المبكر للأورام والجراحات الدقيقة">Early Cancer Detection & Precision Surgery
+                            data-ar="الكشف المبكر عن الاورام والجراحات الدقيقة">Early Cancer Detection & Precision
+                            Surgery
                         </h3>
                         <p class="service-premium-desc"
                             data-en="Utilizing the latest global technologies for early detection and precise surgical intervention, ensuring your safety and complete peace of mind."
@@ -148,17 +206,19 @@
                     </div>
                 </div>
 
-                <!-- Service 2 (Large) -->
-                <div class="service-premium-card large-card reveal" style="transition-delay: 0.1s;">
-                    <img src="images/service-laparoscopy-hijabi.png" alt="Advanced Laparoscopy"
+                <!-- Service 2 -->
+                <div class="service-premium-card reveal" style="transition-delay: 0.1s;">
+                    <img src="images/Gemini_Generated_Image_if92x7if92x7if92.png" alt="Advanced Laparoscopy"
                         class="service-premium-bg">
                     <div class="service-premium-overlay"></div>
                     <div class="service-premium-content">
-                        <h3 data-en="Advanced Laparoscopy" data-ar="المناظير المتقدمة">Advanced Laparoscopy</h3>
+                        <h3 data-en="Gynecological Laparoscopy" data-ar="مناظير نسائية">Gynecological Laparoscopy</h3>
                         <p class="service-premium-desc"
                             data-en="Same-day surgeries with the latest laparoscopic equipment for minimal pain and a faster recovery so you can return to your daily life quickly."
-                            data-ar="جراحات اليوم الواحد بأحدث أجهزة المناظير لتقليل الألم وسرعة تعافيكِ وعودتكِ لحياتكِ الطبيعية.">Same-day
-                            surgeries with the latest laparoscopic equipment for minimal pain and a faster recovery so you can return to your daily life quickly.</p>
+                            data-ar="جراحات اليوم الواحد بأحدث أجهزة المناظير لتقليل الألم وسرعة تعافيكِ وعودتكِ لحياتكِ الطبيعية.">
+                            Same-day
+                            surgeries with the latest laparoscopic equipment for minimal pain and a faster recovery so
+                            you can return to your daily life quickly.</p>
                     </div>
                 </div>
 
@@ -167,36 +227,55 @@
                     <img src="images/service-pregnancy-hijabi.png" alt="Pregnancy Care" class="service-premium-bg">
                     <div class="service-premium-overlay"></div>
                     <div class="service-premium-content">
-                        <h3 data-en="Pregnancy Care" data-ar="متابعة الحمل">Pregnancy Care</h3>
+                        <h3 data-en="Pregnancy & High-Risk Pregnancy Care" data-ar="متابعة الحمل والحمل الحرج">Pregnancy
+                            & High-Risk Pregnancy Care</h3>
                         <p class="service-premium-desc"
                             data-en="We walk with you step-by-step for a safe and joyful journey from day one through the moment you embrace your baby."
-                            data-ar="نرافقكِ خطوة بخطوة في رحلة حمل آمنة ومريحة من اليوم الأول وحتى لحظة احتضان طفلِك.">We walk with you step-by-step for a safe and joyful journey from day one through the moment you embrace your baby.</p>
+                            data-ar="نرافقكِ خطوة بخطوة في رحلة حمل آمنة ومريحة من اليوم الأول وحتى لحظة احتضان طفلِك.">
+                            We walk with you step-by-step for a safe and joyful journey from day one through the moment
+                            you embrace your baby.</p>
                     </div>
                 </div>
 
                 <!-- Service 4 (Standard) -->
                 <div class="service-premium-card reveal" style="transition-delay: 0.1s;">
-                    <img src="images/service-infertility-hijabi.png" alt="Infertility Treatment"
-                        class="service-premium-bg">
+                    <img src="images/infertility.png" alt="Infertility Treatment" class="service-premium-bg">
                     <div class="service-premium-overlay"></div>
                     <div class="service-premium-content">
                         <h3 data-en="Infertility Treatment" data-ar="تأخر الإنجاب">Infertility Treatment</h3>
                         <p class="service-premium-desc"
                             data-en="Advanced scientific solutions and compassionate support to help fulfill your dream of motherhood."
-                            data-ar="نقدم لكِ أحدث الحلول العلمية والدعم المستمر لتحقيق حلمكِ الغالي في الأمومة.">Advanced scientific solutions and compassionate support to help fulfill your dream of motherhood.</p>
+                            data-ar="نقدم لكِ أحدث الحلول العلمية والدعم المستمر لتحقيق حلمكِ الغالي في الأمومة.">
+                            Advanced scientific solutions and compassionate support to help fulfill your dream of
+                            motherhood.</p>
                     </div>
                 </div>
 
                 <!-- Service 5 (Standard) -->
                 <div class="service-premium-card reveal" style="transition-delay: 0.2s;">
-                    <img src="images/service-screening-hijabi.png" alt="Comprehensive Screening"
-                        class="service-premium-bg">
+                    <img src="images/shamel.png" alt="Comprehensive Screening" class="service-premium-bg">
                     <div class="service-premium-overlay"></div>
                     <div class="service-premium-content">
                         <h3 data-en="Comprehensive Screening" data-ar="الفحص الشامل">Comprehensive Screening</h3>
                         <p class="service-premium-desc"
                             data-en="Regular check-ups designed specifically for your reassurance and early detection of any health issues."
-                            data-ar="فحوصات شاملة ودورية مخصصة للاطمئنان على صحتكِ والكشف المبكر لحمايتكِ.">Regular check-ups designed specifically for your reassurance and early detection of any health issues.</p>
+                            data-ar="فحوصات شاملة ودورية مخصصة للاطمئنان على صحتكِ والكشف المبكر لحمايتكِ.">Regular
+                            check-ups designed specifically for your reassurance and early detection of any health
+                            issues.</p>
+                    </div>
+                </div>
+
+                <!-- Service 6 (Standard) -->
+                <div class="service-premium-card reveal" style="transition-delay: 0.3s;">
+                    <img src="images/service-screening-hijabi.png" alt="Family Planning" class="service-premium-bg">
+                    <div class="service-premium-overlay"></div>
+                    <div class="service-premium-content">
+                        <h3 data-en="Family Planning" data-ar="تنظيم الاسرة">Family Planning</h3>
+                        <p class="service-premium-desc"
+                            data-en="Expert guidance and personalized solutions for family planning, helping you make informed decisions about your reproductive health."
+                            data-ar="استشارات متخصصة وحلول مخصصة لتنظيم الأسرة، لمساعدتكِ في اتخاذ قرارات مدروسة بشأن صحتكِ الإنجابية.">
+                            Expert guidance and personalized solutions for family planning, helping you make informed
+                            decisions about your reproductive health.</p>
                     </div>
                 </div>
             </div>
@@ -209,7 +288,9 @@
             <div class="why-us-header-staggered reveal">
                 <span class="section-label" data-en="WHY CHOOSE US" data-ar="لماذا تختارين عيادتنا؟">WHY CHOOSE
                     US</span>
-                <h2 data-en="Why thousands of women like you trust Dr. Amira" data-ar="لماذا تثق آلاف النساء بالدكتورة أميرة وتختارها لرعايتهن">Why thousands of women like you trust Dr. Amira</h2>
+                <h2 data-en="Why thousands of women like you trust Dr. Amira"
+                    data-ar="لماذا تثق آلاف النساء بالدكتورة أميرة وتختارها لرعايتهن">Why thousands of women like you
+                    trust Dr. Amira</h2>
             </div>
 
             <div class="why-staggered-list reveal">
@@ -218,7 +299,8 @@
                     <div class="staggered-content">
                         <h3 data-en="Female Medical Team" data-ar="فريق طبي نسائي">Female Medical Team</h3>
                         <p data-en="Ensuring complete privacy and psychological comfort for you at every visit."
-                            data-ar="نضمن لكِ خصوصية تامة وراحة نفسية كاملة في كل زيارة.">Ensuring complete privacy and psychological comfort for you at every visit.
+                            data-ar="نضمن لكِ خصوصية تامة وراحة نفسية كاملة في كل زيارة.">Ensuring complete privacy and
+                            psychological comfort for you at every visit.
                         </p>
                     </div>
                 </div>
@@ -226,18 +308,22 @@
                 <div class="why-staggered-item">
                     <div class="staggered-number">2</div>
                     <div class="staggered-content">
-                        <h3 data-en="Branches in Alexandria & Damanhour" data-ar="فرعان بالإسكندرية ودمنهور">Branches in Alexandria & Damanhour</h3>
+                        <h3 data-en="Branches in Alexandria & Damanhour" data-ar="فرعان بالإسكندرية ودمنهور">Branches in
+                            Alexandria & Damanhour</h3>
                         <p data-en="Located in Alexandria and Damanhour, always ready to serve and care for you."
-                            data-ar="نتواجد في الإسكندرية ودمنهور لخدمتكِ ورعايتكِ أينما كنتِ.">Located in Alexandria and Damanhour, always ready to serve and care for you.</p>
+                            data-ar="نتواجد في الإسكندرية ودمنهور لخدمتكِ ورعايتكِ أينما كنتِ.">Located in Alexandria
+                            and Damanhour, always ready to serve and care for you.</p>
                     </div>
                 </div>
 
                 <div class="why-staggered-item">
-                    <div class="staggered-number">20<span class="staggered-symbol">+</span></div>
+                    <div class="staggered-number">30<span class="staggered-symbol">+</span></div>
                     <div class="staggered-content">
                         <h3 data-en="Years of Expertise" data-ar="سنة خبرة">Years of Expertise</h3>
                         <p data-en="Decades of academic and clinical experience guaranteeing you the most accurate diagnosis and treatment."
-                            data-ar="خبرة أكاديمية وعملية تمتد لعقود تضمن لكِ أدق تشخيص وأفضل خطة علاج.">Decades of academic and clinical experience guaranteeing you the most accurate diagnosis and treatment.</p>
+                            data-ar="خبرة أكاديمية وعملية تمتد لعقود تضمن لكِ أدق تشخيص وأفضل خطة علاج.">Decades of
+                            academic and clinical experience guaranteeing you the most accurate diagnosis and treatment.
+                        </p>
                     </div>
                 </div>
             </div>
@@ -249,7 +335,8 @@
         <div class="container">
             <div class="testimonials-header-centered reveal" style="text-align: center; margin-bottom: 40px;">
                 <span class="section-label" data-en="PATIENT REVIEWS" data-ar="آراء مريضاتنا">PATIENT REVIEWS</span>
-                <h2 data-en="What Women Like You Say" data-ar="ماذا تقول مريضاتنا عن تجربتهن">What Women Like You Say</h2>
+                <h2 data-en="What Women Like You Say" data-ar="ماذا تقول مريضاتنا عن تجربتهن">What Women Like You Say
+                </h2>
             </div>
             <div class="testimonial-wrap reveal">
                 <div class="testimonial-quote-mark"><span class="material-symbols-outlined">format_quote</span></div>
@@ -273,7 +360,9 @@
                         <p class="testimonial-text"
                             data-en="My experience with Dr. Amira was a turning point. She is exceptionally professional with an amazing ability to reassure you as a patient and explain every medical detail simply. The clinic is very elegant and you feel truly respected."
                             data-ar="تجربتي مع د. أميرة كانت نقطة تحول، احترافية عالية جداً وقدرة مذهلة على طمأنتكِ كمريضة وشرح كل التفاصيل الطبية ببساطة. العيادة راقية جداً والتعامل قمة في الرقي.">
-                            My experience with Dr. Amira was a turning point. She is exceptionally professional with an amazing ability to reassure you as a patient and explain every medical detail simply. The clinic is very elegant and you feel truly respected.
+                            My experience with Dr. Amira was a turning point. She is exceptionally professional with an
+                            amazing ability to reassure you as a patient and explain every medical detail simply. The
+                            clinic is very elegant and you feel truly respected.
                         </p>
                         <div class="testimonial-author">
                             <div class="testimonial-avatar">S.A</div>
@@ -358,38 +447,120 @@
             <div class="contact-grid">
                 <!-- Location & Info -->
                 <div class="contact-info reveal">
-                    <span class="section-label" data-en="GET IN TOUCH WITH US" data-ar="توتصلي معنا">GET IN TOUCH WITH US</span>
+                    <span class="section-label" data-en="GET IN TOUCH WITH US" data-ar="توتصلي معنا">GET IN TOUCH WITH
+                        US</span>
                     <h2 data-en="Visit Our Clinic" data-ar="زوري عيادتنا">Visit Our Clinic</h2>
                     <p class="contact-desc"
                         data-en="We are ready to provide you with the best specialized healthcare for women. Book your appointment today or visit us directly at our main branch."
                         data-ar="نحن هنا لتقديم أفضل رعاية صحية مخصصة لكِ. احجزي موعدكِ الآن أو تفضلي بزيارتنا في فرعنا الرئيسي.">
-                        We are ready to provide you with the best specialized healthcare for women. Book your appointment today or visit us directly at our main branch.
+                        We are ready to provide you with the best specialized healthcare for women. Book your
+                        appointment today or visit us directly at our main branch.
                     </p>
 
                     <div class="info-list">
-                        <div class="info-item">
-                            <span class="material-symbols-outlined icon">location_on</span>
-                            <div>
-                                <h4 data-en="Alexandria Branch" data-ar="فرع الإسكندرية">Alexandria Branch</h4>
-                                <p data-en="Cleopatra Sq, Port Said St, in front of Marzouk Patisserie, Cleopatra Class Bldg, 3rd Floor"
-                                    data-ar="ميدان كليوباترا - شارع بورسعيد - أمام حلواني مرزوق - عمارة كليوباترا كلاس الدور الثالث">
-                                    Cleopatra Sq, Port Said St, in front of Marzouk Patisserie, Cleopatra Class Bldg, 3rd Floor</p>
+                        <!-- Call Center Dedicated Box -->
+                        <div class="call-center-box">
+                            <span class="material-symbols-outlined icon"
+                                style="color: var(--plum); font-size: 2.2rem;">support_agent</span>
+                            <div style="flex-grow: 1;">
+                                <h4 data-en="Unified Call Center" data-ar="رقم مركز الاتصال الموحد (كول سنتر)"
+                                    style="color: var(--plum); margin-bottom: 4px; font-weight: 700;">Unified Call
+                                    Center</h4>
+                                <a href="tel:01118244487"
+                                    style="font-size: 1.3rem; font-weight: 700; color: var(--plum); text-decoration: none; display: inline-flex; align-items: center; gap: 8px;">
+                                    <span>01118244487</span>
+                                    <span class="material-symbols-outlined"
+                                        style="font-size: 1.1rem; color: var(--gold);">call</span>
+                                </a>
                             </div>
                         </div>
-                        <div class="info-item">
-                            <span class="material-symbols-outlined icon">location_on</span>
-                            <div>
-                                <h4 data-en="Damanhour Branch" data-ar="فرع دمنهور">Damanhour Branch</h4>
-                                <p data-en="Abd El-Salam El-Shazly St, in front of McDonald's, Tabarak Tower, 1st Floor"
-                                    data-ar="شارع عبد السلام الشاذلي - أمام ماكدونالدز - برج تبارك الدور الأول">
-                                    Abd El-Salam El-Shazly St, in front of McDonald's, Tabarak Tower, 1st Floor</p>
+
+                        <!-- Branches Grid (Side by Side) -->
+                        <div class="branches-grid">
+                            <!-- Damanhour Branch Block -->
+                            <div class="branch-info-box">
+                                <div style="display: flex; align-items: flex-start; gap: 14px;">
+                                    <span class="material-symbols-outlined icon"
+                                        style="color: var(--gold); font-size: 1.8rem; margin-top: 2px;">location_on</span>
+                                    <div style="flex-grow: 1;">
+                                        <h4 data-en="Damanhour Branch" data-ar="فرع دمنهور"
+                                            style="font-size: 1.15rem; color: var(--plum); margin-bottom: 6px;">
+                                            Damanhour Branch</h4>
+                                        <a href="https://maps.app.goo.gl/WESk4rnD8iXf4FV4A" target="_blank"
+                                            rel="noopener noreferrer" class="location-link">
+                                            <span
+                                                data-en="Abd El-Salam El-Shazly St, in front of McDonald's, Tabarak Tower, 1st Floor"
+                                                data-ar="شارع عبد السلام الشاذلي - أمام ماكدونالدز - برج تبارك الدور الأول">
+                                                Abd El-Salam El-Shazly St, in front of McDonald's, Tabarak Tower, 1st
+                                                Floor
+                                            </span>
+                                        </a>
+                                        <a href="https://maps.app.goo.gl/WESk4rnD8iXf4FV4A" target="_blank"
+                                            rel="noopener noreferrer" class="btn-maps-link">
+                                            <span class="material-symbols-outlined"
+                                                style="font-size: 1.1rem;">map</span>
+                                            <span data-en="Open in Google Maps ↗"
+                                                data-ar="افتح الموقع على خرائط جوجل ↗">Open in Google Maps ↗</span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="branch-contact-row">
+                                    <div class="branch-phones">
+                                        <span class="material-symbols-outlined"
+                                            style="color: var(--plum); font-size: 1.2rem;">call</span>
+                                        <a href="tel:01149991403">01149991403</a>
+                                        <span style="color: var(--text-muted);">/</span>
+                                        <a href="tel:0453338816">045-3338816</a>
+                                    </div>
+                                    <a href="https://wa.me/201149991403" target="_blank" rel="noopener noreferrer"
+                                        class="btn-whatsapp-link">
+                                        <span class="material-symbols-outlined" style="font-size: 1.1rem;">chat</span>
+                                        <span>WhatsApp</span>
+                                    </a>
+                                </div>
                             </div>
-                        </div>
-                        <div class="info-item">
-                            <span class="material-symbols-outlined icon">call</span>
-                            <div>
-                                <h4 data-en="Phone" data-ar="الهاتف">Phone</h4>
-                                <p>01118244487</p>
+
+                            <!-- Alexandria Branch Block -->
+                            <div class="branch-info-box">
+                                <div style="display: flex; align-items: flex-start; gap: 14px;">
+                                    <span class="material-symbols-outlined icon"
+                                        style="color: var(--gold); font-size: 1.8rem; margin-top: 2px;">location_on</span>
+                                    <div style="flex-grow: 1;">
+                                        <h4 data-en="Alexandria Branch" data-ar="فرع الإسكندرية"
+                                            style="font-size: 1.15rem; color: var(--plum); margin-bottom: 6px;">
+                                            Alexandria Branch</h4>
+                                        <a href="https://maps.app.goo.gl/eMN2zUhnWxKCACwH8" target="_blank"
+                                            rel="noopener noreferrer" class="location-link">
+                                            <span
+                                                data-en="Cleopatra Sq, Port Said St, in front of Marzouk Patisserie, Cleopatra Class Bldg, 3rd Floor"
+                                                data-ar="ميدان كليوباترا - شارع بورسعيد - أمام حلواني مرزوق - عمارة كليوباترا كلاس الدور الثالث">
+                                                Cleopatra Sq, Port Said St, in front of Marzouk Patisserie, Cleopatra
+                                                Class Bldg, 3rd Floor
+                                            </span>
+                                        </a>
+                                        <a href="https://maps.app.goo.gl/eMN2zUhnWxKCACwH8" target="_blank"
+                                            rel="noopener noreferrer" class="btn-maps-link">
+                                            <span class="material-symbols-outlined"
+                                                style="font-size: 1.1rem;">map</span>
+                                            <span data-en="Open in Google Maps ↗"
+                                                data-ar="افتح الموقع على خرائط جوجل ↗">Open in Google Maps ↗</span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="branch-contact-row">
+                                    <div class="branch-phones">
+                                        <span class="material-symbols-outlined"
+                                            style="color: var(--plum); font-size: 1.2rem;">call</span>
+                                        <a href="tel:01220209220">01220209220</a>
+                                        <span style="color: var(--text-muted);">/</span>
+                                        <a href="tel:035466643">03-5466643</a>
+                                    </div>
+                                    <a href="https://wa.me/201220209220" target="_blank" rel="noopener noreferrer"
+                                        class="btn-whatsapp-link">
+                                        <span class="material-symbols-outlined" style="font-size: 1.1rem;">chat</span>
+                                        <span>WhatsApp</span>
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -407,7 +578,9 @@
                     <div class="form-card">
                         <h3 data-en="Book Your Appointment" data-ar="احجزي موعدكِ">Book Your Appointment</h3>
                         <p data-en="Fill out your details below and our female reception team will contact you promptly to confirm your appointment."
-                            data-ar="سجلي بياناتكِ في النموذج التالي وسيقوم فريق الاستقبال النسائي بالتواصل معكِ لتأكيد موعدكِ.">Fill out your details below and our female reception team will contact you promptly to confirm your appointment.</p>
+                            data-ar="سجلي بياناتكِ في النموذج التالي وسيقوم فريق الاستقبال النسائي بالتواصل معكِ لتأكيد موعدكِ.">
+                            Fill out your details below and our female reception team will contact you promptly to
+                            confirm your appointment.</p>
 
                         <form id="dummyBookingForm" class="booking-form"
                             onsubmit="event.preventDefault(); alert('This is a dummy form! Booking logic will be set up inside WordPress.');">
@@ -420,9 +593,11 @@
                                 <input type="tel" required>
                             </div>
                             <div class="form-group">
-                                <label data-en="Select Your Service" data-ar="الخدمة التي تحتاجينها">Select Your Service</label>
+                                <label data-en="Select Your Service" data-ar="الخدمة التي تحتاجينها">Select Your
+                                    Service</label>
                                 <select required>
-                                    <option value="" disabled selected data-en="Select Your Service" data-ar="اختاري الخدمة المطلوبة">
+                                    <option value="" disabled selected data-en="Select Your Service"
+                                        data-ar="اختاري الخدمة المطلوبة">
                                         Select Your Service</option>
                                     <option data-en="General Checkup" data-ar="كشف عام">General Checkup</option>
                                     <option data-en="Pregnancy Follow-up" data-ar="متابعة حمل">Pregnancy Follow-up
@@ -445,7 +620,7 @@
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-brand">
-                    <img src="images/logo.jpg" alt="Amira Clinic Logo" class="footer-logo">
+                    <img src="images/logo.png" alt="Amira Clinic Logo" class="footer-logo">
                     <div class="footer-tagline" data-en="Always With You ♥" data-ar="دايماً معاكم ♥">Always With You ♥
                     </div>
                     <p data-en="Professor of Obstetrics & Gynecology and Infertility Treatment — Consultant in Gynecological Oncology and Advanced Laparoscopy at Alexandria University."
@@ -467,10 +642,17 @@
                 </div>
                 <div class="footer-col">
                     <h4 data-en="Contact Us" data-ar="توتصلي معنا">Contact Us</h4>
-                    <a href="tel:+201118244487"><span class="material-symbols-outlined footer-link-icon">call</span>
-                        01118244487</a>
-                    <a href="https://www.facebook.com/Dramirabadawy" target="_blank"><span
-                            class="material-symbols-outlined footer-link-icon">open_in_new</span> Facebook</a>
+                    <a href="tel:01118244487" style="color: var(--gold); font-weight: 700;"><span
+                            class="material-symbols-outlined footer-link-icon"
+                            style="color: var(--gold);">support_agent</span>
+                        <span data-en="Call Center: 01118244487" data-ar="الكول سنتر: 01118244487">Call Center:
+                            01118244487</span></a>
+                    <a href="tel:01220209220"><span class="material-symbols-outlined footer-link-icon">call</span>
+                        <span data-en="Alexandria: 01220209220" data-ar="الإسكندرية: 01220209220">Alexandria:
+                            01220209220</span></a>
+                    <a href="tel:01149991403"><span class="material-symbols-outlined footer-link-icon">call</span>
+                        <span data-en="Damanhour: 01149991403" data-ar="دمنهور: 01149991403">Damanhour:
+                            01149991403</span></a>
                 </div>
             </div>
             <div class="footer-bottom">
@@ -484,7 +666,7 @@
                                 d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
                         </svg>
                     </a>
-                    <a href="#" aria-label="Instagram">
+                    <a href="https://www.instagram.com/dr_amirabadawy/" target="_blank" aria-label="Instagram">
                         <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
                             <path
                                 d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z" />
