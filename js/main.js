@@ -217,4 +217,72 @@ document.addEventListener('DOMContentLoaded', () => {
         }
         startHeroTimer();
     }
+
+    // ==========================================
+    // Gallery Lightbox
+    // ==========================================
+    const galleryItems = document.querySelectorAll('.gallery-item');
+    const lightbox = document.getElementById('galleryLightbox');
+    const lightboxImg = document.getElementById('lightboxImg');
+    const lightboxClose = document.getElementById('lightboxClose');
+    const lightboxPrev = document.getElementById('lightboxPrev');
+    const lightboxNext = document.getElementById('lightboxNext');
+
+    let galleryImages = [];
+    let currentGalleryIndex = 0;
+
+    if (galleryItems.length > 0 && lightbox) {
+        // Collect all gallery image sources
+        galleryItems.forEach((item, index) => {
+            const img = item.querySelector('img');
+            if (img) {
+                galleryImages.push(img.src);
+                item.addEventListener('click', () => {
+                    currentGalleryIndex = index;
+                    openLightbox(index);
+                });
+            }
+        });
+
+        function openLightbox(index) {
+            lightboxImg.src = galleryImages[index];
+            lightbox.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeLightbox() {
+            lightbox.classList.remove('active');
+            document.body.style.overflow = '';
+        }
+
+        function showPrev() {
+            currentGalleryIndex = (currentGalleryIndex - 1 + galleryImages.length) % galleryImages.length;
+            lightboxImg.src = galleryImages[currentGalleryIndex];
+        }
+
+        function showNext() {
+            currentGalleryIndex = (currentGalleryIndex + 1) % galleryImages.length;
+            lightboxImg.src = galleryImages[currentGalleryIndex];
+        }
+
+        lightboxClose.addEventListener('click', closeLightbox);
+        lightboxPrev.addEventListener('click', showPrev);
+        lightboxNext.addEventListener('click', showNext);
+
+        // Close on clicking outside the image
+        lightbox.addEventListener('click', (e) => {
+            if (e.target === lightbox || e.target.classList.contains('lightbox-content')) {
+                closeLightbox();
+            }
+        });
+
+        // Keyboard navigation
+        document.addEventListener('keydown', (e) => {
+            if (!lightbox.classList.contains('active')) return;
+            if (e.key === 'Escape') closeLightbox();
+            if (e.key === 'ArrowLeft') showPrev();
+            if (e.key === 'ArrowRight') showNext();
+        });
+    }
+
 });
