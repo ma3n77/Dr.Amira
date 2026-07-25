@@ -2176,10 +2176,15 @@ h3 {
 }
 
 @media (max-width: 768px) {
+    /*  The slide photos are 16:9. A tall hero on a narrow phone forces
+        background-size:cover to scale them up to fill the height, which
+        crops most of the width and reads as "zoomed in". Keeping the hero
+        short limits how far they get scaled, so more of each photo shows. */
     .hero {
         align-items: center;
         text-align: center;
-        padding: 140px 0 180px 0;
+        min-height: auto;
+        padding: 90px 0 80px 0;
     }
 
     .hero-content {
@@ -2191,8 +2196,14 @@ h3 {
         /* Even dark overlay on mobile */
     }
 
+    /* Smaller hero type keeps the hero short, which keeps the slide
+       photos from being scaled up as far. See the .hero note above. */
     .hero-title {
-        font-size: 2.5rem;
+        font-size: 2rem;
+    }
+
+    .hero-subtitle {
+        font-size: 0.95rem;
     }
 
     .overlap-section {
