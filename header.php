@@ -19,7 +19,8 @@
         <div class="container">
             <div class="nav-inner">
                 <div class="nav-logo">
-                    <img src="<?php echo get_template_directory_uri(); ?>/images/logo-trimmed.png" alt="Amira Clinic Logo">
+                    <img class="logo-gold" src="<?php echo get_template_directory_uri(); ?>/images/logo-trimmed.png" alt="Amira Clinic Logo">
+                    <img class="logo-burgundy" src="<?php echo get_template_directory_uri(); ?>/images/logo-trimmed-burgundy.png" alt="" aria-hidden="true">
                 </div>
                 <nav class="nav-menu" id="navMenu">
                     <a href="#hero" data-en="Home" data-ar="الرئيسية">Home</a>

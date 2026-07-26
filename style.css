@@ -413,17 +413,42 @@ h3 {
     gap: 12px;
     height: 100%;
     flex-shrink: 0;
+    position: relative;
 }
 
 .nav-logo img {
     height: var(--logo-height);
     width: auto;
     margin-top: var(--logo-top);
-    transition: height 0.4s ease;
+    transition: height 0.4s ease, opacity 0.4s ease;
+}
+
+/*  Two stacked logos: the gold one reads over the transparent header on
+    the hero, the burgundy one over the white background once scrolled.
+    The burgundy copy sits on top of the gold one and fades in. */
+.nav-logo .logo-burgundy {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    pointer-events: none;
+}
+
+[dir="rtl"] .nav-logo .logo-burgundy {
+    left: auto;
+    right: 0;
 }
 
 .site-header.scrolled .nav-logo img {
     height: var(--logo-height-scrolled);
+}
+
+.site-header.scrolled .nav-logo .logo-gold {
+    opacity: 0;
+}
+
+.site-header.scrolled .nav-logo .logo-burgundy {
+    opacity: 1;
 }
 
 .nav-menu {
@@ -674,7 +699,7 @@ h3 {
 }
 
 .footer-logo {
-    height: 120px;
+    height: 185px;
     width: auto;
     border-radius: var(--radius-sm);
     align-self: flex-start;
@@ -1508,9 +1533,11 @@ h3 {
     background: var(--surface-low);
 }
 
+/*  Single column while the booking form is out. Restore
+    "1.25fr 0.75fr" when the form comes back. */
 .contact-grid {
     display: grid;
-    grid-template-columns: 1.25fr 0.75fr;
+    grid-template-columns: 1fr;
     gap: 40px;
     align-items: flex-start;
 }
@@ -1647,7 +1674,14 @@ h3 {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
-    align-items: center;
+    align-items: flex-start;
+}
+
+/*  Mobile number on the first line, landline underneath. */
+.branch-phone-list {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
 }
 
 .branch-phones a {
@@ -2420,5 +2454,129 @@ h3 {
 
     .nav-toggle {
         width: 26px;
+    }
+}
+
+/* ==========================================
+   BACK TO TOP
+   Fixed pill that fades in once the user is
+   past the hero. Mirrors to the left in RTL.
+   ========================================== */
+.back-to-top {
+    position: fixed;
+    bottom: 28px;
+    right: 28px;
+    z-index: 900;
+    width: 52px;
+    height: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 50%;
+    background: var(--plum);
+    color: var(--text-on-plum);
+    cursor: pointer;
+    box-shadow: 0 8px 24px rgba(62, 16, 33, 0.28);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(16px);
+    transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s ease, background 0.3s ease;
+}
+
+.back-to-top.visible {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.back-to-top:hover {
+    background: var(--plum-light);
+}
+
+.back-to-top .material-symbols-outlined {
+    font-size: 1.5rem;
+}
+
+[dir="rtl"] .back-to-top {
+    right: auto;
+    left: 28px;
+}
+
+@media (max-width: 768px) {
+    .back-to-top {
+        bottom: 18px;
+        right: 18px;
+        width: 46px;
+        height: 46px;
+    }
+
+    [dir="rtl"] .back-to-top {
+        right: auto;
+        left: 18px;
+    }
+}
+
+/* ==========================================
+   FLOATING SOCIAL RAIL
+   Vertical, fixed to the side, always visible.
+   Sits on the left in LTR so it never collides
+   with the back-to-top button (bottom right),
+   and mirrors to the right in RTL.
+   ========================================== */
+.social-rail {
+    position: fixed;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    z-index: 900;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    padding: 8px 6px;
+    background: rgba(255, 255, 255, 0.92);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-radius: 0 var(--radius-md, 14px) var(--radius-md, 14px) 0;
+    box-shadow: 0 8px 28px rgba(62, 16, 33, 0.14);
+}
+
+.social-rail a {
+    width: 38px;
+    height: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: var(--plum);
+    transition: background 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+
+.social-rail a:hover {
+    background: var(--plum);
+    color: var(--text-on-plum);
+    transform: scale(1.08);
+}
+
+[dir="rtl"] .social-rail {
+    left: auto;
+    right: 0;
+    border-radius: var(--radius-md, 14px) 0 0 var(--radius-md, 14px);
+}
+
+@media (max-width: 768px) {
+    .social-rail {
+        gap: 0;
+        padding: 6px 4px;
+    }
+
+    .social-rail a {
+        width: 32px;
+        height: 32px;
+    }
+
+    .social-rail a svg {
+        width: 15px;
+        height: 15px;
     }
 }

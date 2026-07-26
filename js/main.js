@@ -59,6 +59,22 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // ==========================================
+    // Back to top button
+    // ==========================================
+    const backToTop = document.getElementById('backToTop');
+    if (backToTop) {
+        const toggleBackToTop = () => {
+            backToTop.classList.toggle('visible', window.scrollY > 400);
+        };
+        toggleBackToTop();
+        window.addEventListener('scroll', toggleBackToTop);
+
+        backToTop.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    }
+
+    // ==========================================
     // Mobile menu toggle
     // ==========================================
     const navToggle = document.getElementById('navToggle');

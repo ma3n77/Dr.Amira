@@ -33,11 +33,12 @@
                     data-ar="رعاية صحية متخصصة ومصممة من أجلكِ">
                     Specialized Women's Healthcare Tailored For You</h1>
                 <p class="hero-subtitle"
-                    data-en="Prof. Dr. Amira Badawy — Professor of Obstetrics & Gynecology at Alexandria University. Over 20 years of excellence dedicated to providing you with comprehensive healthcare, advanced laparoscopy, and complete peace of mind."
-                    data-ar="أ.د. أميرة بدوى — أستاذ م. أمراض النساء والتوليد بجامعة الإسكندرية، خبرة تزيد عن 20 عاماً مكرسة لتقديم رعاية صحية متكاملة لكِ، وأحدث جراحات المناظير، ولضمان راحة بالكِ وسعادتكِ.">
-                    Prof. Dr. Amira Badawy — Professor of Obstetrics & Gynecology at Alexandria University. Over 20
-                    years of excellence dedicated to providing you with comprehensive healthcare, advanced laparoscopy,
-                    and complete peace of mind.
+                    data-en="Prof. Dr. Amira Badawy — Professor of Obstetrics & Gynecology at Alexandria University. Over 30 years of experience, with distinguished expertise in gynecologic oncology and laparoscopic surgery. We walk with you through every step of your life, ensuring your happiness, your health, and your peace of mind."
+                    data-ar="أ.د. أميرة بدوى — أستاذ م. أمراض النساء والتوليد بجامعة الإسكندرية، خبرة تزيد عن 30 عاماً، مع خبرة متميزة في جراحات الأورام والمناظير النسائية، نرافقكِ في كل خطوة من خطوات حياتِكِ، لضمان سعادتِكِ وصحتِكِ وراحة بالِكِ.">
+                    Prof. Dr. Amira Badawy — Professor of Obstetrics & Gynecology at Alexandria University. Over 30
+                    years of experience, with distinguished expertise in gynecologic oncology and laparoscopic surgery.
+                    We walk with you through every step of your life, ensuring your happiness, your health, and your
+                    peace of mind.
                 </p>
                 <div class="hero-buttons">
                     <a href="#book" class="btn btn-plum"><span class="material-symbols-outlined btn-icon">call</span>
@@ -96,14 +97,14 @@
 
                         <div class="doctor-insights-grid">
                             <div class="insight-card">
-                                <div class="insight-num">30+</div>
+                                <div class="insight-num">+30</div>
                                 <div class="insight-label" data-en="Years of Experience"
                                     data-ar="سنة خبرة طبية وأكاديمية">Years of Experience</div>
                             </div>
                             <div class="insight-card">
-                                <div class="insight-num">+70</div>
-                                <div class="insight-label" data-en="Yearly Oncology Surgeries"
-                                    data-ar="جراحة أورام سنوياً">Yearly Oncology Surgeries</div>
+                                <div class="insight-num">+50</div>
+                                <div class="insight-label" data-en="Yearly Gynecologic Oncology Surgeries"
+                                    data-ar="جراحة أورام نسائية سنوياً">Yearly Gynecologic Oncology Surgeries</div>
                             </div>
                             <div class="insight-card">
                                 <div class="insight-num">+100</div>
@@ -111,9 +112,9 @@
                                     data-ar="حالة متابعة حمل وولادة سنوياً">Yearly Pregnancy Cases</div>
                             </div>
                             <div class="insight-card">
-                                <div class="insight-num">+250</div>
-                                <div class="insight-label" data-en="Yearly Laparoscopy Cases"
-                                    data-ar="حالة منظار متقدم سنوياً">Yearly Laparoscopy Cases</div>
+                                <div class="insight-num">+120</div>
+                                <div class="insight-label" data-en="Yearly Gynecologic Laparoscopy Surgeries"
+                                    data-ar="جراحة منظار نسائي سنوياً">Yearly Gynecologic Laparoscopy Surgeries</div>
                             </div>
                         </div>
                     </div>
@@ -515,9 +516,9 @@
                             <span class="material-symbols-outlined icon"
                                 style="color: var(--plum); font-size: 2.2rem;">support_agent</span>
                             <div style="flex-grow: 1;">
-                                <h4 data-en="Unified Call Center" data-ar="رقم مركز الاتصال الموحد (كول سنتر)"
-                                    style="color: var(--plum); margin-bottom: 4px; font-weight: 700;">Unified Call
-                                    Center</h4>
+                                <h4 data-en="For Booking &amp; Inquiries" data-ar="للحجز و الاستفسار"
+                                    style="color: var(--plum); margin-bottom: 4px; font-weight: 700;">For Booking &amp;
+                                    Inquiries</h4>
                                 <a href="tel:01118244487"
                                     style="font-size: 1.3rem; font-weight: 700; color: var(--plum); text-decoration: none; display: inline-flex; align-items: center; gap: 8px;">
                                     <span>01118244487</span>
@@ -560,9 +561,10 @@
                                     <div class="branch-phones">
                                         <span class="material-symbols-outlined"
                                             style="color: var(--plum); font-size: 1.2rem;">call</span>
-                                        <a href="tel:01149991403">01149991403</a>
-                                        <span style="color: var(--text-muted);">/</span>
-                                        <a href="tel:0453338816">045-3338816</a>
+                                        <div class="branch-phone-list">
+                                            <a href="tel:01149991403">01149991403</a>
+                                            <a href="tel:0453338816">045-3338816</a>
+                                        </div>
                                     </div>
                                     <a href="https://wa.me/201149991403" target="_blank" rel="noopener noreferrer"
                                         class="btn-whatsapp-link">
@@ -603,9 +605,10 @@
                                     <div class="branch-phones">
                                         <span class="material-symbols-outlined"
                                             style="color: var(--plum); font-size: 1.2rem;">call</span>
-                                        <a href="tel:01220209220">01220209220</a>
-                                        <span style="color: var(--text-muted);">/</span>
-                                        <a href="tel:035466643">03-5466643</a>
+                                        <div class="branch-phone-list">
+                                            <a href="tel:01220209220">01220209220</a>
+                                            <a href="tel:035466643">03-5466643</a>
+                                        </div>
                                     </div>
                                     <a href="https://wa.me/201220209220" target="_blank" rel="noopener noreferrer"
                                         class="btn-whatsapp-link">
@@ -625,44 +628,6 @@
                     </div>
                 </div>
 
-                <!-- Dummy Form -->
-                <div class="contact-form-wrapper reveal">
-                    <div class="form-card">
-                        <h3 data-en="Book Your Appointment" data-ar="احجزي موعدكِ">Book Your Appointment</h3>
-                        <p data-en="Fill out your details below and our female reception team will contact you promptly to confirm your appointment."
-                            data-ar="سجلي بياناتكِ في النموذج التالي وسيقوم فريق الاستقبال النسائي بالتواصل معكِ لتأكيد موعدكِ.">
-                            Fill out your details below and our female reception team will contact you promptly to
-                            confirm your appointment.</p>
-
-                        <form id="dummyBookingForm" class="booking-form"
-                            onsubmit="event.preventDefault(); alert('This is a dummy form! Booking logic will be set up inside WordPress.');">
-                            <div class="form-group">
-                                <label data-en="Your Full Name" data-ar="اسمكِ بالكامل">Your Full Name</label>
-                                <input type="text" required>
-                            </div>
-                            <div class="form-group">
-                                <label data-en="Your Phone Number" data-ar="رقم هاتفِك">Your Phone Number</label>
-                                <input type="tel" required>
-                            </div>
-                            <div class="form-group">
-                                <label data-en="Select Your Service" data-ar="الخدمة التي تحتاجينها">Select Your
-                                    Service</label>
-                                <select required>
-                                    <option value="" disabled selected data-en="Select Your Service"
-                                        data-ar="اختاري الخدمة المطلوبة">
-                                        Select Your Service</option>
-                                    <option data-en="General Checkup" data-ar="كشف عام">General Checkup</option>
-                                    <option data-en="Pregnancy Follow-up" data-ar="متابعة حمل">Pregnancy Follow-up
-                                    </option>
-                                    <option data-en="Gynecological Oncology" data-ar="أورام نسائية">Gynecological
-                                        Oncology</option>
-                                </select>
-                            </div>
-                            <button type="submit" class="btn btn-plum form-submit" data-en="Book My Appointment Now"
-                                data-ar="احجزي موعدكِ الآن">Book My Appointment Now</button>
-                        </form>
-                    </div>
-                </div>
             </div>
         </div>
     </section>
